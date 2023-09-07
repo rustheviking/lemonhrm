@@ -1,0 +1,103 @@
+.font-awesome {
+    -fx-font-family: "Font Awesome 6 free Solid";
+    -fx-font-size: 14;
+    -fx-font-fill: #0077cc;
+}
+
+.borderless-menu-button .context-menu .menu-item:focused {
+    -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when focused
+}
+.borderless-menu-button .context-menu .menu-item:hover {
+    -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when hover over it
+}
+
+.borderless-menu-button .context-menu .menu-item {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: #000000; // text color of the item menu
+    -fx-font-size: 10px
+    //-fx-padding: 10 0 10 0; // Adjust the 1st and 3rd value to change the distance
+}
+
+.borderless-menu-button .context-menu {
+    -fx-background-color: rgba(255, 255, 255, 0.3); // opaque white background for the dropdown
+    -fx-background-radius: 10 // radius of the rounded corners
+}
+
+.borderless-menu-button .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.borderless-menu-button .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.borderless-menu-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.rounded-label-small {
+    -fx-background-color:  #ff7b1d;
+    -fx-padding: 2 5 2 5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 20;
+}
+
+.rounded-label {
+    -fx-background-color:  #ff7b1d;
+    -fx-padding: 5 10 5 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 20;
+}
+
+.hoverable-label:hover {
+    -fx-underline: true;
+}
+
+.hoverable-label-change-bgcolor: hover {
+    -fx-background-color:  #ff7b1d;
+}
+
+.change-bgcolor-upon-clicked-label: clicked {
+    -fx-background-color:  #ff7b1d;
+}
+
+#customLabel{
+    -fx-background-color:  #ffffff;
+}
+
+#customLabel:hover {
+    -fx-background-color:  #ff7b1d;
+}
+
+.custom-button{
+    -fx-background-color:  #ffffff;
+}
+
+.custom-button:hover {
+    -fx-background-color:  #ff7b1d;
+}
+
+#customButton{
+    -fx-background-color:  #ffffff;
+}
+
+#customButton:hover {
+    -fx-background-color:  #ff7b1d;
+}
+
+.underline-text-field {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background, -fx-faint-focus-color, transparent;
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 0;
+    -fx-padding: 0.333333em 0.166667em 0.333333em 0.166667em;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.underline2-text-field {
+    -fx-background-color: -fx-control-inner-background, -fx-faint-focus-color, -fx-control-inner-background, -fx-faint-focus-color, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 1.4, 2.1, 2.6;
+    -fx-background-radius: 0;
+    -fx-padding: 0.333333em 0.166667em 0.333333em 0.166667em;
+    -fx-text-fill: -fx-text-inner-color;
+}

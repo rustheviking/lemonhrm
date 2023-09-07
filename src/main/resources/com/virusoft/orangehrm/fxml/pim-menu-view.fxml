@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.orangehrm.controllers.PimMenuController">
+    <children>
+        <Label fx:id="menu1RoundedLabel" layoutX="51.0" layoutY="8.0" opacity="0.4" prefHeight="20.0" prefWidth="125.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="8.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="configurationMenuButton" contentDisplay="RIGHT" layoutX="62.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Configuration" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="13.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Data Import" />
+                <MenuItem mnemonicParsing="false" text="Reporting Method" />
+                <MenuItem mnemonicParsing="false" text="Termination Reasons" />
+            </items>
+        </MenuButton>
+        <Label fx:id="menu2RoundedLabel" layoutX="189.0" layoutY="8.0" opacity="0.4" prefHeight="20.0" prefWidth="122.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="8.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="employeeListMenuButton" contentDisplay="RIGHT" layoutX="200.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="101.0" text="Employee List" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="13.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Job Titles" />
+                <MenuItem mnemonicParsing="false" text="Pay Grades" />
+                <MenuItem mnemonicParsing="false" text="Employment Status" />
+                <MenuItem mnemonicParsing="false" text="Job Categories" />
+                <MenuItem mnemonicParsing="false" text="Work Shifts" />
+            </items>
+        </MenuButton>
+        <Label fx:id="menu3RoundedLabel" layoutX="324.0" layoutY="8.0" opacity="0.4" prefHeight="20.0" prefWidth="123.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="8.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="addEmployeeMenuButton" contentDisplay="RIGHT" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Add Employee" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="13.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="General Information" />
+                <MenuItem mnemonicParsing="false" text="Locations" />
+                <MenuItem mnemonicParsing="false" text="Structure" />
+            </items>
+        </MenuButton>
+        <Label fx:id="menu4RoundedLabel" layoutX="459.0" layoutY="8.0" opacity="0.4" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="459.0" AnchorPane.topAnchor="8.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="reportsMenuButton" contentDisplay="RIGHT" layoutX="469.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="71.0" text="Reports" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="469.0" AnchorPane.topAnchor="13.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Skills" />
+                <MenuItem mnemonicParsing="false" text="Education" />
+                <MenuItem mnemonicParsing="false" text="Licenses" />
+                <MenuItem mnemonicParsing="false" text="Languages" />
+                <MenuItem mnemonicParsing="false" text="Membership" />
+            </items>
+        </MenuButton>
+        <ImageView fx:id="userImageView1" fitHeight="16.0" fitWidth="51.0" layoutX="1036.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.956521987915039">
+            <image>
+                <Image url="@../images/icon-qm.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

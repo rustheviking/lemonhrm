@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.orangehrm.controllers.DashboardController">
+    <top>
+        <AnchorPane prefHeight="67.0" prefWidth="1280.0" style="-fx-background-color: ff7b1d;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="roundedLabel" layoutX="1061.0" layoutY="15.0" opacity="0.4" prefHeight="43.0" prefWidth="197.0" style="-fx-background-color: white;" textFill="WHITE" AnchorPane.rightAnchor="22.0">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <Pane layoutY="-1.0" prefHeight="75.0" prefWidth="204.0" style="-fx-background-color: white;">
+                    <children>
+                        <ImageView fitHeight="55.0" fitWidth="195.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icon-banner.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Label fx:id="clickableLabel1" layoutX="253.0" layoutY="24.0" prefHeight="29.0" prefWidth="177.0" text="Dashboard" textFill="WHITE">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="userImageView" fitHeight="29.0" fitWidth="29.0" layoutX="1074.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="177.0">
+                    <image>
+                        <Image url="@../images/icon-user.png" />
+                    </image>
+                </ImageView>
+                <MenuButton fx:id="usernameMenuButton" contentDisplay="RIGHT" layoutX="1105.0" layoutY="25.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="139.0" text="Wilson A. Limbago Jr." textFill="WHITE" underline="true" AnchorPane.rightAnchor="36.0">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </MenuButton>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane fx:id="leftSideAnchorPane" prefHeight="643.0" prefWidth="204.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="97.0" fitWidth="181.0" layoutX="12.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.912239074707031" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="11.0">
+                    <image>
+                        <Image url="@../images/icon-banner.png" />
+                    </image>
+                </ImageView>
+                <fx:include fx:id="adminUserNavbar" source="admin-user-navbar-view.fxml" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+            <effect>
+                <DropShadow height="0.0" radius="63.25" spread="0.4" width="255.0">
+                    <color>
+                        <Color red="0.75" green="0.7350000143051147" blue="0.7350000143051147" opacity="0.22681991755962372" />
+                    </color>
+                </DropShadow>
+            </effect>
+
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="182.0" prefWidth="15.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+    </right>
+    <bottom>
+        <AnchorPane prefHeight="24.0" prefWidth="1280.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <StackPane fx:id="contentMenuStackPane" prefHeight="50.0" prefWidth="1061.0" style="-fx-background-color: white;" />
+                <AnchorPane fx:id="contentAnchorPane" prefHeight="496.0" prefWidth="1061.0">
+                    <children>
+                        <ScrollPane prefHeight="495.0" prefWidth="1061.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="0.0" prefWidth="1061.0" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
