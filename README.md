@@ -80,4 +80,4 @@ For any questions, suggestions, or issues, please contact [rustheviking@gmail.co
 
 ---
 
-Enjoy using the OrangeHRM Desktop Application! We hope it simplifies your HR management tasks and enhances your organization's efficiency.
+Enjoy using the LemonHRM Desktop Application! We hope it simplifies your HR management tasks and enhances your organization's efficiency.
