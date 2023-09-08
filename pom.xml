@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.virusoft</groupId>
-    <artifactId>orangehrm</artifactId>
+    <artifactId>lemonhrm</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>orangehrm</name>
 
@@ -67,7 +67,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.virusoft.orangehrm/com.virusoft.orangehrm.HelloApplication</mainClass>
+                            <mainClass>com.virusoft.lemonhrm.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

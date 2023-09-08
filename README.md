@@ -1,10 +1,9 @@
-# OrangeHRM Desktop Application
+# LemonHRM Desktop Application
 
-![OrangeHRM Logo](https://www.orangehrm.com/wp-content/uploads/2018/02/orangehrm-logo.png)
 
 ## Overview
 
-The OrangeHRM Desktop Application is a JavaFX-based HR management system inspired by the open-source web-based HRM software, [OrangeHRM](https://www.orangehrm.com/). This desktop application aims to provide a user-friendly and efficient way to manage human resources within an organization while leveraging the familiarity and convenience of a native desktop application.
+The LemonHRM Desktop Application is a JavaFX-based HR management system inspired by the open-source web-based HRM software, [OrangeHRM](https://www.orangehrm.com/). This desktop application aims to provide a user-friendly and efficient way to manage human resources within an organization while leveraging the familiarity and convenience of a native desktop application.
 
 ## Features
 
@@ -19,7 +18,7 @@ The OrangeHRM Desktop Application is a JavaFX-based HR management system inspire
 
 ## Prerequisites
 
-Before running the OrangeHRM Desktop Application, make sure you have the following prerequisites installed:
+Before running the LemonHRM Desktop Application, make sure you have the following prerequisites installed:
 
 - **Java Development Kit (JDK)**: You need Java 11 or higher to run this application.
 - **JavaFX**: The application relies on JavaFX for its graphical user interface.
@@ -30,13 +29,13 @@ Before running the OrangeHRM Desktop Application, make sure you have the followi
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/rustheviking/orangehrm.git
+   git clone https://github.com/rustheviking/lemonhrm.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd orangehrm
+   cd lemonhrm
    ```
 
 3. Build the application using Maven:
@@ -48,18 +47,18 @@ Before running the OrangeHRM Desktop Application, make sure you have the followi
 4. Run the application:
 
    ```bash
-   java -jar target/orangehrm-1.0.jar
+   java -jar target/lemonhrm-1.0.jar
    ```
 
 ## Usage
 
-1. Launch the OrangeHRM Desktop Application.
+1. Launch the LemonHRM Desktop Application.
 2. Log in using your credentials.
 3. Explore the various features and functionalities offered by the application.
 
 ## Contributing
 
-We welcome contributions to improve the OrangeHRM Desktop Application. If you'd like to contribute, please follow these steps:
+We welcome contributions to improve the LemonHRM Desktop Application. If you'd like to contribute, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
@@ -81,4 +80,4 @@ For any questions, suggestions, or issues, please contact [rustheviking@gmail.co
 
 ---
 
-Enjoy using the OrangeHRM Desktop Application! We hope it simplifies your HR management tasks and enhances your organization's efficiency.
+Enjoy using the LemonHRM Desktop Application! We hope it simplifies your HR management tasks and enhances your organization's efficiency.

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="500.0" prefWidth="626.0" style="-fx-background-color: white;"
+            xmlns="http://javafx.com/javafx/20.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.virusoft.lemonhrm.controllers.LoginController">
+    <ImageView fitHeight="486.0" fitWidth="351.0" layoutX="274.0" layoutY="7.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../images/icon-side-banner.png"/>
+    </ImageView>
+    <Label layoutX="108.0" layoutY="186.0" text="Username" textFill="#a8a8a8">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Label>
+    <Label layoutX="109.0" layoutY="245.0" text="Password" textFill="#a8a8a8">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Label>
+    <ImageView fitHeight="78.0" fitWidth="254.0" layoutX="70.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+        <effect>
+            <DropShadow height="62.51" radius="32.2375" spread="0.03" width="68.44">
+                <color>
+                    <Color red="0.7763158082962036" green="0.7691276669502258" blue="0.7691276669502258"/>
+                </color>
+            </DropShadow>
+        </effect>
+        <Image url="@../images/icon-banner.png"/>
+    </ImageView>
+    <ImageView fitHeight="16.0" fitWidth="18.0" layoutX="91.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/icon-person.png"/>
+    </ImageView>
+    <ImageView fitHeight="15.0" fitWidth="16.0" layoutX="92.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../images/icon-password.png"/>
+    </ImageView>
+    <Label layoutX="149.0" layoutY="452.0" text="OrangeHRM OS 5.5" textFill="#a8a8a8">
+        <font>
+            <Font size="9.0"/>
+        </font>
+    </Label>
+    <Label layoutX="81.0" layoutY="465.0" text="©2005-2023 OrangeHRM, Inc  All rights reserved." textFill="#a8a8a8">
+        <font>
+            <Font size="9.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="usernameTextField" layoutX="91.0" layoutY="207.0" opacity="0.8" prefHeight="26.0"
+               prefWidth="212.0" style="-fx-background-color: fffcc8;">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </TextField>
+    <PasswordField fx:id="passwordPasswordField" layoutX="90.0" layoutY="266.0" opacity="0.8" prefHeight="26.0"
+                   prefWidth="212.0" style="-fx-background-color: fffcc8;">
+        <font>
+            <Font size="10.0"/>
+        </font>
+    </PasswordField>
+    <Button fx:id="loginButton" layoutX="90.0" layoutY="314.0" mnemonicParsing="false" onAction="#loginButtonOnClick"
+            prefHeight="30.0" prefWidth="212.0" style="-fx-background-color: ff7b1d;" text="Login" textFill="WHITE">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Button>
+    <Button fx:id="cancelButton" layoutX="90.0" layoutY="356.0" mnemonicParsing="false" onAction="#cancelButtonOnAction"
+            prefHeight="30.0" prefWidth="212.0" style="-fx-background-color: ff7b1d;" text="Cancel" textFill="WHITE">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Button>
+    <Label fx:id="forgetyourpasswordLabel" layoutX="137.0" layoutY="402.0" text="Forget Your Password?"
+           textFill="#ff7b1d">
+        <font>
+            <Font size="10.0"/>
+        </font>
+    </Label>
+    <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="BOTTOM" layoutX="75.0" layoutY="151.0"
+           prefHeight="26.0" prefWidth="243.0" textFill="#fc0101">
+        <font>
+            <Font size="12.0"/>
+        </font>
+    </Label>
+</AnchorPane>
