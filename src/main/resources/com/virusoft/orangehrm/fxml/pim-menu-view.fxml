@@ -15,7 +15,7 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <MenuButton fx:id="configurationMenuButton" contentDisplay="RIGHT" layoutX="62.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Configuration" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="13.0">
+        <MenuButton fx:id="configurationMenuButton" contentDisplay="RIGHT" layoutX="62.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Configuration" textFill="#e86006" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="13.0">
             <font>
                 <Font size="10.0" />
             </font>
@@ -30,7 +30,7 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <MenuButton fx:id="employeeListMenuButton" contentDisplay="RIGHT" layoutX="200.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="101.0" text="Employee List" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="13.0">
+        <MenuButton fx:id="employeeListMenuButton" contentDisplay="RIGHT" layoutX="200.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="101.0" text="Employee List" textFill="#e86006" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="13.0">
             <font>
                 <Font size="10.0" />
             </font>
@@ -47,7 +47,7 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <MenuButton fx:id="addEmployeeMenuButton" contentDisplay="RIGHT" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Add Employee" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="13.0">
+        <MenuButton fx:id="addEmployeeMenuButton" contentDisplay="RIGHT" layoutX="335.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Add Employee" textFill="#e86006" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="13.0">
             <font>
                 <Font size="10.0" />
             </font>
@@ -62,7 +62,7 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <MenuButton fx:id="reportsMenuButton" contentDisplay="RIGHT" layoutX="469.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="71.0" text="Reports" textFill="#ff7b1d" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="469.0" AnchorPane.topAnchor="13.0">
+        <MenuButton fx:id="reportsMenuButton" contentDisplay="RIGHT" layoutX="469.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="71.0" text="Reports" textFill="#e86006" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="469.0" AnchorPane.topAnchor="13.0">
             <font>
                 <Font size="10.0" />
             </font>
