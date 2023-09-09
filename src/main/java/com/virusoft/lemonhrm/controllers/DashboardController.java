@@ -9,8 +9,8 @@ import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Circle;
 
 import java.io.IOException;
@@ -24,7 +24,7 @@ public class DashboardController implements DashboardUpdateListener {
     public BorderPane dashboardBorderPane;
 
     @FXML
-    public StackPane contentMenuStackPane;
+    public AnchorPane contentMenuAnchorPane;
 
     @FXML
     public Label roundedLabel;
@@ -65,21 +65,19 @@ public class DashboardController implements DashboardUpdateListener {
     }
 
 
-    public BorderPane getDashboardBorderPane(){
+    public BorderPane getDashboardBorderPane() {
         return dashboardBorderPane;
     }
-
-
 
 
     @Override
     public void onDashboardButtonClicked() {
         System.out.println("Setups Dashboard Menu buttons");
-        try{
+        try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/dashboard-menu-view.fxml"));
             Parent dashboardMenu = loader.load();
-            contentMenuStackPane.getChildren().setAll(dashboardMenu);
-        }catch (IOException e){
+            contentMenuAnchorPane.getChildren().setAll(dashboardMenu);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -87,11 +85,11 @@ public class DashboardController implements DashboardUpdateListener {
     @Override
     public void onAdminButtonClicked() {
         System.out.println("Setups Admin Menu buttons");
-        try{
+        try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/admin-menu-view.fxml"));
             Parent adminMenu = loader.load();
-            contentMenuStackPane.getChildren().setAll(adminMenu);
-        }catch (IOException e){
+            contentMenuAnchorPane.getChildren().setAll(adminMenu);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -99,11 +97,11 @@ public class DashboardController implements DashboardUpdateListener {
     @Override
     public void onPimButtonClicked() {
         System.out.println("Setups PIM Menu buttons");
-        try{
+        try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/pim-menu-view.fxml"));
             Parent pimMenu = loader.load();
-            contentMenuStackPane.getChildren().setAll(pimMenu);
-        }catch (IOException e){
+            contentMenuAnchorPane.getChildren().setAll(pimMenu);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -141,5 +139,17 @@ public class DashboardController implements DashboardUpdateListener {
     @Override
     public void onBuzzButtonClicked() {
 
+    }
+
+    @Override
+    public void onDashboardMenuButtonMenuItemUsersButtonOnClicked() {
+        System.out.println("Setups PIM Menu buttons");
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/users-content-view.fxml"));
+            AnchorPane userContent = fxmlLoader.load();
+            contentScrollPane.setContent(userContent);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
