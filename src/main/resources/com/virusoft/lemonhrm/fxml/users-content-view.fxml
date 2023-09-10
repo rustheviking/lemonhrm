@@ -18,7 +18,7 @@
 
 <AnchorPane minHeight="720.0" prefHeight="720.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.controllers.UsersContentController">
    <children>
-      <HBox layoutX="100.0" layoutY="77.0" prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="77.0">
+      <HBox layoutX="100.0" layoutY="51.0" prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;">
          <children>
             <AnchorPane prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
                <children>

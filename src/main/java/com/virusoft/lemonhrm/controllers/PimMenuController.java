@@ -1,5 +1,6 @@
 package com.virusoft.lemonhrm.controllers;
 
+import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
@@ -30,6 +31,7 @@ public class PimMenuController {
 
     @FXML
     public MenuButton reportsMenuButton;
+    private DashboardUpdateListener dashboardUpdateListener;
 
     @FXML
     public void initialize() {
@@ -48,6 +50,10 @@ public class PimMenuController {
         menu4RoundedLabel.getStyleClass().add("rounded-label-small");
 
 
+    }
+
+    public void setDashboardUpdateListener(DashboardUpdateListener Listener) {
+        this.dashboardUpdateListener = Listener;
     }
 
 }

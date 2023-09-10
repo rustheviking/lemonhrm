@@ -21,7 +21,7 @@ public class DashboardController implements DashboardUpdateListener {
     public AnchorPane navbarAnchorPane;
 
     @FXML
-    public AnchorPane contentMenuAnchorPane;
+    public AnchorPane menuAnchorPane;
 
     @FXML
     public ScrollPane contentScrollPane;
@@ -95,12 +95,12 @@ public class DashboardController implements DashboardUpdateListener {
 
     //Set up loadContentMenuFXML method
     private  void loadContentMenuFXML() throws IOException {
-        String FXMLPath = "/com/virusoft/lemonhrm/fxml/dashboard-content-menu-view.fxml";
+        String FXMLPath = "/com/virusoft/lemonhrm/fxml/dashboard-menu-view.fxml";
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
         AnchorPane contentMenu = loader.load();
-        DashboardContentMenuController dashboardContentMenuController = loader.getController();
-        dashboardContentMenuController.setDashboardUpdateListener(this);
-        contentMenuAnchorPane.getChildren().setAll(contentMenu);
+        DashboardMenuController dashboardMenuController = loader.getController();
+        dashboardMenuController.setDashboardUpdateListener(this);
+        menuAnchorPane.getChildren().setAll(contentMenu);
     }
 
     //Set up loadContentMenuFXML method
@@ -123,7 +123,7 @@ public class DashboardController implements DashboardUpdateListener {
 
     //Set up a getter for the root node of contentMenu which is the AnchorPane
     public AnchorPane getContentMenuAnchorPane() {
-        return contentMenuAnchorPane;
+        return menuAnchorPane;
     }
 
 
@@ -137,35 +137,16 @@ public class DashboardController implements DashboardUpdateListener {
     /*This is the override method from the Interface
       that is implemented by this Controller*/
 
-    @Override
-    public void loadAdminUserNavbar(String adminUserNavbarFXML) throws IOException {
-        navbarAnchorPane.getChildren().setAll(loadFXML(adminUserNavbarFXML));
-    }
 
-    @Override
-    public void loadPimUserNavbar(String pimUserNavbarFXML) throws IOException {
-        navbarAnchorPane.getChildren().setAll(loadFXML(pimUserNavbarFXML));
-    }
-
-    @Override
-    public void loadContentMenu(String contentMenuFXML) throws IOException {
-        contentMenuAnchorPane.getChildren().setAll(loadFXML(contentMenuFXML));
-    }
-
-    @Override
-    public void loadContent(String contentFXML) throws IOException {
-        contentScrollPane.setContent(loadFXML(contentFXML));
-    }
 
     //Set up a buttonClicked event on navbar Dashboard button
     @Override
     public void onDashboardButtonClicked() {
-        System.out.println("Setups Dashboard Menu buttons");
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/dashboard-content-menu-view.fxml"));
-            Parent dashboardMenu = loader.load();
-            contentMenuAnchorPane.getChildren().setAll(dashboardMenu);
-        } catch (IOException e) {
+        System.out.println("Setups Dashboard Menu buttons and Content");
+        try{
+            loadContentMenuFXML();
+            loadContentFXML();
+        }catch (IOException e){
             e.printStackTrace();
         }
     }
@@ -176,9 +157,22 @@ public class DashboardController implements DashboardUpdateListener {
     public void onAdminButtonClicked() {
         System.out.println("Setups Admin Menu buttons");
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/admin-menu-view.fxml"));
-            Parent adminMenu = loader.load();
-            contentMenuAnchorPane.getChildren().setAll(adminMenu);
+            //Set up admin menu
+            String menuFXMLPath = "/com/virusoft/lemonhrm/fxml/admin-menu-view.fxml";
+            FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(menuFXMLPath));
+            AnchorPane adminMenu = menuLoader.load();
+            AdminMenuController adminMenuController = menuLoader.getController();
+            adminMenuController.setDashboardUpdateListener(this);
+            menuAnchorPane.getChildren().setAll(adminMenu);
+
+            //Set up admin content as users content
+            String contentFXMLPath = "/com/virusoft/lemonhrm/fxml/users-content-view.fxml";
+            FXMLLoader contentLoader = new FXMLLoader(getClass().getResource(contentFXMLPath));
+            AnchorPane usersContent = contentLoader.load();
+            UsersContentController usersContentController = contentLoader.getController();
+            usersContentController.setDashboardUpdateListener(this);
+            contentScrollPane.setContent(usersContent);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -190,9 +184,12 @@ public class DashboardController implements DashboardUpdateListener {
     public void onPimButtonClicked() {
         System.out.println("Setups PIM Menu buttons");
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/pim-menu-view.fxml"));
+            String FXMLPath = "/com/virusoft/lemonhrm/fxml/pim-menu-view.fxml";
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
             Parent pimMenu = loader.load();
-            contentMenuAnchorPane.getChildren().setAll(pimMenu);
+            PimMenuController pimMenuController = loader.getController();
+            pimMenuController.setDashboardUpdateListener(this);
+            menuAnchorPane.getChildren().setAll(pimMenu);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -13,10 +13,11 @@ public class DashboardContentController {
         this.dashboardUpdateListener = Listener;
     }
 
+    /*
     @FXML
     private void handleUsersButtonClicked() throws IOException {
         dashboardUpdateListener.loadContent("/com/virusoft/lemonhrm/fxml/users-content-view.fxml");
     }
-
+    */
 
 }
