@@ -1,14 +1,358 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.virusoft.lemonhrm.controllers.DashboardContentController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane minHeight="720.0" prefHeight="1025.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.controllers.DashboardContentController">
+   <children>
+      <VBox layoutX="100.0" layoutY="77.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <HBox prefHeight="404.0" prefWidth="874.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane prefHeight="356.0" prefWidth="874.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="404.0" prefWidth="874.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="271.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="271.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="271.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                                 <children>
+                                    <Separator layoutX="16.0" layoutY="37.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="36.0" layoutY="10.0" prefHeight="24.0" prefWidth="83.0" text="My Actions" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-myaction.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="255.0" fitWidth="211.0" layoutX="30.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-empty-dashboard.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="57.0" layoutY="309.0" prefHeight="24.0" prefWidth="157.0" text="No Pending Actions to Perform" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                                 <children>
+                                    <Separator layoutX="12.0" layoutY="37.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="32.0" layoutY="10.0" prefHeight="24.0" prefWidth="83.0" text="My Actions" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-myaction.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="47.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-apply-leave.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="118.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-my-leave.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="189.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-my-timesheet.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" layoutX="32.0" layoutY="103.0" prefHeight="24.0" prefWidth="70.0" text="Apply Leave" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="112.0" layoutY="103.0" prefHeight="24.0" prefWidth="54.0" text="My Leave" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="174.0" layoutY="102.0" prefHeight="24.0" prefWidth="74.0" text="My Timesheet" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minWidth="195.0" prefHeight="404.0" prefWidth="195.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Separator layoutX="13.0" layoutY="37.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="33.0" layoutY="10.0" prefHeight="24.0" prefWidth="83.0" text="Time at Work" textFill="#535c90" AnchorPane.leftAnchor="33.0">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="12.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-clock-black.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="15.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-user-small.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="65.0" layoutY="61.0" prefHeight="24.0" prefWidth="98.0" text="Not Punched In" textFill="#535c90">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ProgressBar layoutX="16.0" layoutY="106.0" prefHeight="24.0" prefWidth="200.0" progress="0.3" />
+                                    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="218.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-clock-orange.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Separator layoutX="13.0" layoutY="144.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Separator layoutX="13.0" layoutY="367.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <ProgressBar layoutX="-43.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.25" rotate="-90.0" />
+                                    <ProgressBar layoutX="-9.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.39" rotate="-90.0" />
+                                    <ProgressBar layoutX="25.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.73" rotate="-90.0" />
+                                    <ProgressBar layoutX="60.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.66" rotate="-90.0" />
+                                    <ProgressBar layoutX="95.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.85" rotate="-90.0" />
+                                    <ProgressBar layoutX="130.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.74" rotate="-90.0" />
+                                    <ProgressBar layoutX="164.0" layoutY="282.0" prefHeight="24.0" prefWidth="150.0" progress="0.21" rotate="-90.0" />
+                                    <Label layoutX="20.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="Sun" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="54.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="Mon" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="89.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="Tue" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="122.0" layoutY="369.0" prefHeight="24.0" prefWidth="30.0" text="Wed" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="158.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="Thu" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="196.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="Fri" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="230.0" layoutY="369.0" prefHeight="24.0" prefWidth="24.0" text="Sat" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="158.0" prefHeight="24.0" prefWidth="61.0" text="This Week" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="17.0" layoutY="175.0" prefHeight="24.0" prefWidth="92.0" text="Sep 10 - Sep 16" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="225.0" layoutY="168.0" prefHeight="24.0" prefWidth="41.0" text="0h 0m" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="203.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-clock-black.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <Pane prefHeight="50.0" prefWidth="871.0" VBox.vgrow="ALWAYS" />
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="404.0" prefWidth="874.0">
+               <children>
+                  <AnchorPane prefHeight="356.0" prefWidth="874.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="404.0" prefWidth="874.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="271.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="271.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="271.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                                 <children>
+                                    <Separator layoutX="16.0" layoutY="37.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="36.0" layoutY="10.0" prefHeight="24.0" prefWidth="83.0" text="My Actions" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-myaction.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="255.0" fitWidth="211.0" layoutX="30.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-empty-dashboard.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="57.0" layoutY="309.0" prefHeight="24.0" prefWidth="157.0" text="No Pending Actions to Perform" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <GridPane.margin>
+                                    <Insets left="20.0" />
+                                 </GridPane.margin>
+                                 <children>
+                                    <Separator layoutX="12.0" layoutY="37.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="32.0" layoutY="10.0" prefHeight="24.0" prefWidth="83.0" text="My Actions" textFill="#535c90">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-myaction.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="255.0" fitWidth="211.0" layoutX="29.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-empty-dashboard.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="56.0" layoutY="309.0" prefHeight="24.0" prefWidth="157.0" text="No Pending Actions to Perform" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minWidth="195.0" prefHeight="404.0" prefWidth="195.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <Separator layoutX="13.0" layoutY="37.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="33.0" layoutY="10.0" prefHeight="24.0" prefWidth="100.0" text="Announcements" textFill="#535c90" AnchorPane.leftAnchor="33.0">
+                                       <font>
+                                          <Font name="System Bold" size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="12.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-qm.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="15.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icon-user-small.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="65.0" layoutY="62.0" prefHeight="24.0" prefWidth="98.0" text="Supervisor" textFill="#535c90">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="13.0" layoutY="379.0" prefHeight="3.0" prefWidth="244.0" style="-fx-background-color: #535c90;" />
+                                    <Label layoutX="16.0" layoutY="106.0" opacity="0.11" prefHeight="69.0" prefWidth="240.0" style="-fx-background-color: #4e588a;" textFill="#4e588aba">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="179.0" layoutY="49.0" prefHeight="24.0" prefWidth="75.0" text="Sep 10 ,2023" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="34.0" layoutY="125.0" prefHeight="31.0" prefWidth="203.0" text="Close all departments during sabbath" textFill="#535c90">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets right="20.0" />
+                                 </GridPane.margin>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

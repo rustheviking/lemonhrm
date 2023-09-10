@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane prefHeight="720.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.virusoft.lemonhrm.controllers.UsersContentController">
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
+<AnchorPane minHeight="720.0" prefHeight="720.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.controllers.UsersContentController">
+   <children>
+      <HBox layoutX="100.0" layoutY="77.0" prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <AnchorPane prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label layoutX="26.0" layoutY="33.0" text="System Users" textFill="#535c90" AnchorPane.leftAnchor="26.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="25.0" layoutY="80.0" prefHeight="0.0" prefWidth="812.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="34.0" />
+                  <GridPane layoutX="26.0" layoutY="82.0" prefHeight="90.0" prefWidth="826.0" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="82.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+                      <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="400.0" minWidth="10.0" prefWidth="200.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Username" textFill="#535c90">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label text="User Role" textFill="#535c90" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <ComboBox maxWidth="400.0" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </ComboBox>
+                        <Label text="Employee Name" textFill="#535c90" GridPane.columnIndex="2">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <ComboBox maxWidth="400.0" prefHeight="35.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </ComboBox>
+                        <Label text="Status" textFill="#535c90" GridPane.columnIndex="3">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField maxWidth="400.0" prefHeight="35.0" prefWidth="200.0" promptText="Type for hints..." GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </TextField>
+                        <TextField maxWidth="400.0" prefHeight="35.0" prefWidth="200.0" promptText="Search username..." GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="15.0" />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <Separator layoutX="26.0" layoutY="193.0" prefHeight="0.0" prefWidth="812.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="33.0" />
+                  <Button layoutX="727.0" layoutY="203.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0" text="Search" AnchorPane.rightAnchor="32.0" />
+                  <Button layoutX="601.0" layoutY="203.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0" text="Reset" AnchorPane.rightAnchor="158.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutX="100.0" layoutY="382.0" minHeight="249.0" prefHeight="249.0" prefWidth="871.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="89.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="382.0">
+         <children>
+            <AnchorPane prefHeight="240.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="NEVER">
+               <children>
+                  <Button layoutX="25.0" layoutY="16.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0" text="+ Add" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="16.0" />
+                  <Separator layoutX="25.0" layoutY="75.0" prefHeight="0.0" prefWidth="812.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="34.0" />
+                  <Label layoutX="27.0" layoutY="95.0" prefHeight="24.0" prefWidth="201.0" text="(2) Records Found" textFill="#535c90" AnchorPane.leftAnchor="27.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView minHeight="100.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="124.0" text="Username" />
+                <TableColumn prefWidth="175.0" text="User Role" />
+                  <TableColumn prefWidth="230.0" text="Employee Name" />
+                  <TableColumn prefWidth="197.0" text="Status" />
+                  <TableColumn prefWidth="104.0" text="Actions" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </VBox.margin>
+            </TableView>
+         </children></VBox>
+   </children>
 </AnchorPane>

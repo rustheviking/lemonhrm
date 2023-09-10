@@ -19,6 +19,9 @@ public class AdminMenuController {
     private DashboardUpdateListener dashboardUpdateListener;
 
     @FXML
+    public MenuItem usersMenuItem;
+
+    @FXML
     public Label menu1RoundedLabel;
 
     @FXML
@@ -53,7 +56,6 @@ public class AdminMenuController {
     public void initialize() {
         System.out.println("Initializing configurations in AdminMenuController");
 
-
         //set a borderless menuButton
         userManagementMenuButton.getStyleClass().add("borderless-menu-button");
         jobMenuButton.getStyleClass().add("borderless-menu-button");
@@ -68,11 +70,11 @@ public class AdminMenuController {
         menu4RoundedLabel.getStyleClass().add("rounded-label-small");
         menu5RoundedLabel.getStyleClass().add("rounded-label-small");
 
-        setupContextMenu();
+        //setupContextMenu();
     }
 
-    public void setDashboardUpdateListener(DashboardUpdateListener dashboardUpdateListener) {
-        this.dashboardUpdateListener = dashboardUpdateListener;
+    public void setDashboardUpdateListener(DashboardUpdateListener Listener) {
+        this.dashboardUpdateListener = Listener;
     }
 
     @FXML
@@ -85,6 +87,9 @@ public class AdminMenuController {
     }
 
 
+
+
+    /*
     private void setupContextMenu() {
         //Setup context Menu
         ContextMenu contextMenu = new ContextMenu();
@@ -119,6 +124,16 @@ public class AdminMenuController {
         });
 
 
+
+    }
+
+     */
+
+
+
+    @FXML
+    private void handleUsersButtonClicked() throws IOException {
+        dashboardUpdateListener.loadContent("/com/virusoft/lemonhrm/fxml/users-content-view.fxml");
     }
 
 

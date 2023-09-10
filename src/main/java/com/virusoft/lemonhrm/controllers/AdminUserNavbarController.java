@@ -12,7 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 
-public class AdminUserNavbarController {
+public class  AdminUserNavbarController {
 
     private DashboardUpdateListener dashboardUpdateListener;
 
@@ -120,8 +120,8 @@ public class AdminUserNavbarController {
 
     }
 
-    public void setDashboardUpdateListener(DashboardUpdateListener dashboardUpdateListener) {
-        this.dashboardUpdateListener = dashboardUpdateListener;
+    public void setDashboardUpdateListener(DashboardUpdateListener Listener) {
+        this.dashboardUpdateListener = Listener;
     }
 
     @FXML

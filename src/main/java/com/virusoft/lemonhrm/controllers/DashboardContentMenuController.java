@@ -5,7 +5,8 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-public class DashboardContentController {
+public class DashboardContentMenuController {
+
 
     private DashboardUpdateListener dashboardUpdateListener;
 
@@ -17,6 +18,8 @@ public class DashboardContentController {
     private void handleUsersButtonClicked() throws IOException {
         dashboardUpdateListener.loadContent("/com/virusoft/lemonhrm/fxml/users-content-view.fxml");
     }
+
+
 
 
 }

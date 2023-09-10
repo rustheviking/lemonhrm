@@ -19,6 +19,9 @@
             <font>
                 <Font size="10.0" />
             </font>
+            <items>
+                <MenuItem fx:id="usersMenuItem" mnemonicParsing="false" onAction="#handleUsersButtonClicked" text="Users" />
+            </items>
         </MenuButton>
         <Label fx:id="menu2RoundedLabel" layoutX="212.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="212.0">
             <font>

@@ -82,55 +82,53 @@ public class LoginController {
         stage.setY(event.getScreenY() - yOffset);
     }
 
+
+
     @FXML
     public void loginButtonOnClick(ActionEvent event) {
         System.out.println("loginButtonOnClick testing");
         if (!usernameTextField.getText().isBlank() && !passwordPasswordField.getText().isBlank()) {
-            //loginMessageLabel.setText("You try to login!");
             try {
                 //Load the Dashboard FXML file
                 FXMLLoader dashboardloader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/dashboard-view.fxml"));
                 Parent dashboard = dashboardloader.load();
+
+                //Get the DashboardController and initialize it
                 DashboardController dashboardController = dashboardloader.getController();
 
-                //Load the Navbar FXML file
-                FXMLLoader adminusernavbarloader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/admin-user-navbar-view.fxml"));
-                Parent adminusernavbar = adminusernavbarloader.load();
-                AdminUserNavbarController adminUserNavbarController = adminusernavbarloader.getController();
+                //Set up userRole as admin for testing
+                String userRole = "admin";
 
-                //Set the listener
-                adminUserNavbarController.setDashboardUpdateListener(dashboardController);
-
-                //Add the navbar as a child node to the BorderPane
-                dashboardController.getDashboardBorderPane().setLeft(adminusernavbar);
-
-                //Create a new scene with the loaded FXML file
-                Scene scene = new Scene(dashboard, 1280, 640);
-
-                //add external css file
-                scene.getStylesheets().add(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css").toExternalForm());
+                //set up dashboardController initialize method
+                dashboardController.initialize(userRole);
 
                 //Create a new stage
-                Stage stage = new Stage();
+                Stage dashboardStage = new Stage();
+
+                //Create a new scene with the loaded FXML file
+                Scene dashboardScene = new Scene(dashboard, 1280, 640);
+
+                //add external css file
+                dashboardScene.getStylesheets().add(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css").toExternalForm());
 
                 //Set stage min Width and Height
-                stage.setMinWidth(1280);
-                stage.setMinHeight(720);
+                dashboardStage.setMinWidth(1280);
+                dashboardStage.setMinHeight(720);
 
                 //Set the scene to the stage
-                stage.setScene(scene);
+                dashboardStage.setScene(dashboardScene);
 
                 //Disable or enable the maximize button
-                stage.setResizable(true);
+                dashboardStage.setResizable(true);
 
                 //Disable minimize,maximize and close button
                 //stage.initStyle(StageStyle.UNDECORATED);
 
                 //enable minimize,maximize and close button
-                stage.initStyle(StageStyle.DECORATED);
+                dashboardStage.initStyle(StageStyle.DECORATED);
 
                 //Show the stage
-                stage.show();
+                dashboardStage.show();
             } catch (IOException e) {
                 e.printStackTrace();
             }
