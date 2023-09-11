@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.views;
+package com.virusoft.lemonhrm.viewcontrollers;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.event.ActionEvent;
@@ -6,8 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
-
-import java.io.IOException;
 
 
 public class AdminMenuController {

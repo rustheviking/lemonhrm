@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="adminUserNavbar" prefHeight="443.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.views.AdminUserNavbarController">
+<Pane fx:id="adminUserNavbar" prefHeight="443.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.AdminUserNavbarController">
     <children>
         <TextField fx:id="searchTextField" layoutX="58.0" layoutY="13.0" prefHeight="28.0" prefWidth="156.0" promptText="Search...">
          <padding>
@@ -58,62 +58,62 @@
         <Label fx:id="clickableLabel" alignment="CENTER" layoutX="1.0" layoutY="422.0" prefHeight="26.0" prefWidth="250.0" text="Clickable Label" />
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-dashboard.png" />
+                <Image url="@../images/icon-dashboard.png" />
             </image>
         </ImageView>
         <ImageView fx:id="sampleImageView" fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-buzz.png" />
+                <Image url="@../images/icon-buzz.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="23.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-search.png" />
+                <Image url="@../images/icon-search.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-admin.png" />
+                <Image url="@../images/icon-admin.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-pim.png" />
+                <Image url="@../images/icon-pim.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-leave.png" />
+                <Image url="@../images/icon-leave.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-time.png" />
+                <Image url="@../images/icon-time.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-recruitment.png" />
+                <Image url="@../images/icon-recruitment.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-myinfo.png" />
+                <Image url="@../images/icon-myinfo.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-performance.png" />
+                <Image url="@../images/icon-performance.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-directory.png" />
+                <Image url="@../images/icon-directory.png" />
             </image>
         </ImageView>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="36.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-buzz.png" />
+                <Image url="@../images/icon-buzz.png" />
             </image>
         </ImageView>
 

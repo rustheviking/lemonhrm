@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.views;
+package com.virusoft.lemonhrm.viewcontrollers;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.fxml.FXML;
@@ -98,8 +98,9 @@ public class DashboardController implements DashboardUpdateListener {
         String FXMLPath = "/com/virusoft/lemonhrm/views/dashboard-menu-view.fxml";
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
         AnchorPane contentMenu = loader.load();
+    /*/ DashboardMenuController is empty
         DashboardMenuController dashboardMenuController = loader.getController();
-        dashboardMenuController.setDashboardUpdateListener(this);
+        dashboardMenuController.setDashboardUpdateListener(this); */
         menuAnchorPane.getChildren().setAll(contentMenu);
     }
 

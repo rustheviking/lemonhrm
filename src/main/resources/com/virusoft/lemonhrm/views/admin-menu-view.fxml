@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.views.AdminMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.AdminMenuController">
     <children>
         <Label fx:id="menu1RoundedLabel" layoutX="51.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="51.0">
             <font>
@@ -74,7 +74,7 @@
         </MenuButton>
         <ImageView fx:id="userImageView1" fitHeight="16.0" fitWidth="51.0" layoutX="1036.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.956521987915039">
             <image>
-                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-qm.png" />
+                <Image url="@../images/icon-qm.png" />
             </image>
         </ImageView>
         <Label fx:id="menu5RoundedLabel" layoutX="569.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="123.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="569.0">

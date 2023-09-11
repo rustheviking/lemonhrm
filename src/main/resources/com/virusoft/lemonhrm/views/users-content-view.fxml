@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="usersContentAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.views.UsersContentController">
+<AnchorPane fx:id="usersContentAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.UsersContentController">
    <children>
       <HBox layoutX="100.0" layoutY="40.0" prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="40.0">
          <children>

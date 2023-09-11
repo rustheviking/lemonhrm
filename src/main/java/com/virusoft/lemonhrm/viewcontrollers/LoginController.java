@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.views;
+package com.virusoft.lemonhrm.viewcontrollers;
 
 
 import javafx.event.ActionEvent;
@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.util.Objects;
 
 
 public class LoginController {
@@ -112,7 +113,7 @@ public class LoginController {
 
                 //add external css file
                 String CCSPath = "/com/virusoft/lemonhrm/css/styles.css";
-                dashboardScene.getStylesheets().add(getClass().getResource(CCSPath).toExternalForm());
+                dashboardScene.getStylesheets().add(Objects.requireNonNull(getClass().getResource(CCSPath)).toExternalForm());
 
                 //Set stage min Width and Height
                 dashboardStage.setMinWidth(1280);

@@ -2,12 +2,14 @@ package com.virusoft.lemonhrm;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.text.Font;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main extends Application {
     public static void main(String[] args) {
@@ -16,10 +18,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/virusoft/lemonhrm/views/login-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 626, 500);
-        scene.getStylesheets().add(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css").toExternalForm());
-        Font.loadFont(getClass().getResourceAsStream("/fonts/Font Awesome 6 Free-Solid-900.otf"), 14);
+        String FXMLPath = "/com/virusoft/lemonhrm/views/login-view.fxml";
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXMLPath));
+        fxmlLoader.setRoot(new AnchorPane());
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root, 626, 500);
+        scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css")).toExternalForm());
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();

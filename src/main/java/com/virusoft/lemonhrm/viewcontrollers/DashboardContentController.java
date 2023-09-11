@@ -1,12 +1,8 @@
-package com.virusoft.lemonhrm.views;
+package com.virusoft.lemonhrm.viewcontrollers;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
-import javafx.fxml.FXML;
 
-import java.io.IOException;
-
-public class DashboardMenuController {
-
+public class DashboardContentController {
 
     private DashboardUpdateListener dashboardUpdateListener;
 
@@ -20,7 +16,5 @@ public class DashboardMenuController {
         dashboardUpdateListener.loadContent("/com/virusoft/lemonhrm/fxml/users-content-view.fxml");
     }
     */
-
-
 
 }

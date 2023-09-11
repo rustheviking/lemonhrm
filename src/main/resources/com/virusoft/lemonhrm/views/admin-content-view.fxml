@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.virusoft.lemonhrm.views.PimContentController"
+            fx:controller="com.virusoft.lemonhrm.viewcontrollers.AdminContentController"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>

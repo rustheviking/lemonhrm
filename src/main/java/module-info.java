@@ -5,10 +5,11 @@ module com.virusoft.lemonhrm {
     requires org.kordamp.bootstrapfx.core;
 
     opens com.virusoft.lemonhrm to javafx.fxml;
+    opens com.virusoft.lemonhrm.viewcontrollers to javafx.fxml;
     opens com.virusoft.lemonhrm.controllers to javafx.fxml;
     exports com.virusoft.lemonhrm;
     exports com.virusoft.lemonhrm.interfaces;
-    exports com.virusoft.lemonhrm.views;
-    opens com.virusoft.lemonhrm.views to javafx.fxml;
+    exports com.virusoft.lemonhrm.viewcontrollers;
+
 
 }
