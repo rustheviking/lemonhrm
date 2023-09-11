@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="adminUserNavbar" prefHeight="443.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.views.AdminUserNavbarController">
+    <children>
+        <TextField fx:id="searchTextField" layoutX="58.0" layoutY="13.0" prefHeight="28.0" prefWidth="156.0" promptText="Search...">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding></TextField>
+        <Button fx:id="dashboardButton" contentDisplay="TEXT_ONLY" layoutX="-1.0" layoutY="56.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="250.0" text="Dashboard  " textFill="#433d61f2">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="adminButton" layoutX="-1.0" layoutY="97.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Admin         " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="pimButton" layoutX="-1.0" layoutY="133.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="PIM              " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="leaveButton" layoutX="-1.0" layoutY="169.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Leave          " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="timeButton" layoutX="-1.0" layoutY="205.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Time            " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="recruitmentButton" layoutX="-1.0" layoutY="241.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Recruitment" textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="myinfoButton" layoutX="-1.0" layoutY="277.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="My Info        " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="performanceButton" layoutX="-1.0" layoutY="313.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Performance" textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="directoryButton" layoutX="-1.0" layoutY="349.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Directory      " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="buzzButton" layoutX="-1.0" layoutY="385.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="250.0" text="Buzz             " textFill="#433d61f2">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Label fx:id="clickableLabel" alignment="CENTER" layoutX="1.0" layoutY="422.0" prefHeight="26.0" prefWidth="250.0" text="Clickable Label" />
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-dashboard.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="sampleImageView" fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-buzz.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="23.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-search.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-admin.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-pim.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-leave.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-time.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-recruitment.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-myinfo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-performance.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-directory.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="36.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-buzz.png" />
+            </image>
+        </ImageView>
+
+
+    </children>
+</Pane>

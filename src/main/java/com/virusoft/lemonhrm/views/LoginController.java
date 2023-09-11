@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.controllers;
+package com.virusoft.lemonhrm.views;
 
 
 import javafx.event.ActionEvent;
@@ -90,7 +90,9 @@ public class LoginController {
         if (!usernameTextField.getText().isBlank() && !passwordPasswordField.getText().isBlank()) {
             try {
                 //Load the Dashboard FXML file
-                FXMLLoader dashboardloader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/dashboard-view.fxml"));
+                String FXMLPath = "/com/virusoft/lemonhrm/views/dashboard-view.fxml";
+                FXMLLoader dashboardloader = new FXMLLoader(getClass().getResource(FXMLPath));
+
                 Parent dashboard = dashboardloader.load();
 
                 //Get the DashboardController and initialize it
@@ -109,7 +111,8 @@ public class LoginController {
                 Scene dashboardScene = new Scene(dashboard, 1280, 640);
 
                 //add external css file
-                dashboardScene.getStylesheets().add(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css").toExternalForm());
+                String CCSPath = "/com/virusoft/lemonhrm/css/styles.css";
+                dashboardScene.getStylesheets().add(getClass().getResource(CCSPath).toExternalForm());
 
                 //Set stage min Width and Height
                 dashboardStage.setMinWidth(1280);
@@ -120,9 +123,6 @@ public class LoginController {
 
                 //Disable or enable the maximize button
                 dashboardStage.setResizable(true);
-
-                //Disable minimize,maximize and close button
-                //stage.initStyle(StageStyle.UNDECORATED);
 
                 //enable minimize,maximize and close button
                 dashboardStage.initStyle(StageStyle.DECORATED);
@@ -150,7 +150,8 @@ public class LoginController {
         System.out.println("Opening new window");
         try {
             //Load the FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/virusoft/lemonhrm/fxml/forgot-your-password-view.fxml"));
+            String FXMLPath = "/com/virusoft/lemonhrm/views/forgot-your-password-view.fxml";
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
 
             //Create a new scene with the loaded FXML file
             Scene scene = new Scene(loader.load());

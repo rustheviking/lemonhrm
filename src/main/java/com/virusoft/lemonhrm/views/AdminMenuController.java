@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.controllers;
+package com.virusoft.lemonhrm.views;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.event.ActionEvent;
@@ -66,6 +66,9 @@ public class AdminMenuController {
         menu4RoundedLabel.getStyleClass().add("rounded-label-small");
         menu5RoundedLabel.getStyleClass().add("rounded-label-small");
 
+        // Set up an Action event handler for usersMenuItem
+        usersMenuItem.setOnAction(this::handleUsersMenuItemOnAction);
+
     }
 
     public void setDashboardUpdateListener(DashboardUpdateListener Listener) {
@@ -73,25 +76,14 @@ public class AdminMenuController {
     }
 
     @FXML
-    private void handleAdminMenuButtonMenuItemUsersOnAction(ActionEvent event){
+    private void handleUsersMenuItemOnAction(ActionEvent event){
         {
             if (dashboardUpdateListener != null){
-                dashboardUpdateListener.onDashboardMenuButtonMenuItemUsersButtonOnClicked();
+                dashboardUpdateListener.onDashboardUsersMenuItemOnAction();
             }
         }
     }
 
 
-
-
-
-
-
-    /*
-    @FXML
-    private void handleUsersButtonClicked() throws IOException {
-        dashboardUpdateListener.loadContent("/com/virusoft/lemonhrm/fxml/users-content-view.fxml");
-    }
-    */
 
 }

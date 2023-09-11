@@ -1,4 +1,4 @@
 package com.virusoft.lemonhrm.views;
 
-public class PimView {
+public class PimController {
 }

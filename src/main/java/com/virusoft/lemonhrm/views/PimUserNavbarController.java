@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.controllers;
+package com.virusoft.lemonhrm.views;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.event.ActionEvent;

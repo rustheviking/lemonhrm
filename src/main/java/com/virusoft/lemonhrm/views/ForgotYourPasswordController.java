@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.controllers;
+package com.virusoft.lemonhrm.views;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

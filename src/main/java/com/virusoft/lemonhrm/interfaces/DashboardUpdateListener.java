@@ -28,7 +28,7 @@ public interface DashboardUpdateListener {
 
 
     //MenuButton and ContextMenuButton Action events
-    void onDashboardMenuButtonMenuItemUsersButtonOnClicked();
+    void onDashboardUsersMenuItemOnAction();
 
 
 

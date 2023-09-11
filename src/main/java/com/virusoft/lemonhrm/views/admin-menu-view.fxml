@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.views.AdminMenuController">
+    <children>
+        <Label fx:id="menu1RoundedLabel" layoutX="51.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="51.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="userManagementMenuButton" contentDisplay="RIGHT" layoutX="62.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="123.0" text="User Management" textFill="#e86006" AnchorPane.leftAnchor="62.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem fx:id="usersMenuItem" mnemonicParsing="false" text="Users" />
+            </items>
+        </MenuButton>
+        <Label fx:id="menu2RoundedLabel" layoutX="212.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="212.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="jobMenuButton" contentDisplay="RIGHT" layoutX="223.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="49.0" text="Job" textFill="#e86006" AnchorPane.leftAnchor="223.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Job Titles" />
+                <MenuItem mnemonicParsing="false" text="Pay Grades" />
+                <MenuItem mnemonicParsing="false" text="Employment Status" />
+                <MenuItem mnemonicParsing="false" text="Job Categories" />
+                <MenuItem mnemonicParsing="false" text="Work Shifts" />
+            </items>
+        </MenuButton>
+        <Label fx:id="menu3RoundedLabel" layoutX="300.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="300.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="organizationMenuButton" contentDisplay="RIGHT" layoutX="309.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="96.0" text="Organization" textFill="#e86006" AnchorPane.leftAnchor="309.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="General Information" />
+                <MenuItem mnemonicParsing="false" text="Locations" />
+                <MenuItem mnemonicParsing="false" text="Structure" />
+            </items>
+        </MenuButton>
+        <Label fx:id="menu4RoundedLabel" layoutX="431.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="123.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="431.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="qualificationMenuButton" contentDisplay="RIGHT" layoutX="442.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Qualifications" textFill="#e86006" AnchorPane.leftAnchor="442.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Skills" />
+                <MenuItem mnemonicParsing="false" text="Education" />
+                <MenuItem mnemonicParsing="false" text="Licenses" />
+                <MenuItem mnemonicParsing="false" text="Languages" />
+                <MenuItem mnemonicParsing="false" text="Membership" />
+            </items>
+        </MenuButton>
+        <ImageView fx:id="userImageView1" fitHeight="16.0" fitWidth="51.0" layoutX="1036.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.956521987915039">
+            <image>
+                <Image url="@../../../../../resources/com/virusoft/lemonhrm/images/icon-qm.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="menu5RoundedLabel" layoutX="569.0" layoutY="8.0" opacity="0.4" prefHeight="35.0" prefWidth="123.0" style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.leftAnchor="569.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <MenuButton fx:id="configurationMenuButton" contentDisplay="RIGHT" layoutX="579.0" layoutY="13.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="102.0" text="Configuration" textFill="#e86006" AnchorPane.leftAnchor="579.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <items>
+                <MenuItem mnemonicParsing="false" text="Nationalities" />
+                <MenuItem mnemonicParsing="false" text="Corporate Branding" />
+            </items>
+        </MenuButton>
+    </children>
+</AnchorPane>

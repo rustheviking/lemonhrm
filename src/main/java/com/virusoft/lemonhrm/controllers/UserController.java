@@ -1,4 +1,4 @@
 package com.virusoft.lemonhrm.controllers;
 
-public class PimContentController {
+public class UserController {
 }

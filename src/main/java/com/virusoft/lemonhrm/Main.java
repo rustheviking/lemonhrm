@@ -16,7 +16,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/virusoft/lemonhrm/fxml/login-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/com/virusoft/lemonhrm/views/login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 626, 500);
         scene.getStylesheets().add(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css").toExternalForm());
         Font.loadFont(getClass().getResourceAsStream("/fonts/Font Awesome 6 Free-Solid-900.otf"), 14);

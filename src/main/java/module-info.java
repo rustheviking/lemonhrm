@@ -7,7 +7,8 @@ module com.virusoft.lemonhrm {
     opens com.virusoft.lemonhrm to javafx.fxml;
     opens com.virusoft.lemonhrm.controllers to javafx.fxml;
     exports com.virusoft.lemonhrm;
-    exports com.virusoft.lemonhrm.controllers;
     exports com.virusoft.lemonhrm.interfaces;
+    exports com.virusoft.lemonhrm.views;
+    opens com.virusoft.lemonhrm.views to javafx.fxml;
 
 }
