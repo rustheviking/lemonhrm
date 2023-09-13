@@ -57,12 +57,16 @@ public class DashboardController implements DashboardUpdateListener {
 
         //set a borderless menuButton
         usernameMenuButton.getStyleClass().add("borderless-menu-button");
+        usernameMenuButton.getStyleClass().add("hoverable-label");
         MenuItem item1 = new MenuItem("   Change Password   ");
         MenuItem item2 = new MenuItem("   Logout   ");
         usernameMenuButton.getItems().addAll(item1, item2);
 
         //making a rounded-label
-        roundedLabel.getStyleClass().add("rounded-label");
+        roundedLabel.getStyleClass().add("rounded-label-small");
+
+        //making navBarContainer setFocusTraversable to false
+        navbarAnchorPane.setFocusTraversable(false);
 
         //Load fxml components to Dashboard
         loadNavbarFXML(userRole);
@@ -117,27 +121,10 @@ public class DashboardController implements DashboardUpdateListener {
 
 
 
-    //Set up a getter for the root node of Dashboard fxml which is the BorderPane
-    public BorderPane getDashboardBorderPane() {
-        return dashboardBorderPane;
-    }
-
-    //Set up a getter for the root node of contentMenu which is the AnchorPane
-    public AnchorPane getContentMenuAnchorPane() {
-        return menuAnchorPane;
-    }
-
-
-    //Create a method for reusable fxmlLoader
-    private Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
-        return loader.load();
-    }
 
 
     /*This is the override method from the Interface
       that is implemented by this Controller*/
-
 
 
     //Set up a buttonClicked event on navbar Dashboard button

@@ -20,9 +20,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         String FXMLPath = "/com/virusoft/lemonhrm/views/login-view.fxml";
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(FXMLPath));
-        fxmlLoader.setRoot(new AnchorPane());
-        Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root, 626, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 626, 500);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/com/virusoft/lemonhrm/css/styles.css")).toExternalForm());
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);

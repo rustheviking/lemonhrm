@@ -16,9 +16,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane fx:id="usersContentAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.UsersContentController">
    <children>
-      <HBox layoutX="100.0" layoutY="40.0" prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="40.0">
+      <HBox layoutX="51.0" layoutY="37.0" prefHeight="255.0" prefWidth="912.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="37.0">
          <children>
             <AnchorPane prefHeight="255.0" prefWidth="871.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
                <children>
@@ -101,7 +102,7 @@
             </AnchorPane>
          </children>
       </HBox>
-      <VBox layoutX="100.0" layoutY="318.0" minHeight="249.0" prefHeight="249.0" prefWidth="871.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="318.0">
+      <VBox layoutX="51.0" layoutY="315.0" minHeight="248.0" prefHeight="249.0" prefWidth="912.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="315.0">
          <children>
             <AnchorPane prefHeight="240.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="NEVER">
                <children>
@@ -114,18 +115,19 @@
                   </Label>
                </children>
             </AnchorPane>
-            <TableView minHeight="100.0" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <TableView minHeight="100.0" prefHeight="200.0" prefWidth="872.0" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn prefWidth="124.0" text="Username" />
                 <TableColumn prefWidth="175.0" text="User Role" />
                   <TableColumn prefWidth="230.0" text="Employee Name" />
                   <TableColumn prefWidth="197.0" text="Status" />
-                  <TableColumn prefWidth="104.0" text="Actions" />
+                  <TableColumn prefWidth="144.0" text="Actions" />
               </columns>
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" />
                </VBox.margin>
             </TableView>
-         </children></VBox>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

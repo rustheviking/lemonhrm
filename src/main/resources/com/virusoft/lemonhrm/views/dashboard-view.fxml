@@ -16,9 +16,9 @@
 
 <BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.DashboardController">
     <top>
-        <AnchorPane prefHeight="67.0" prefWidth="1280.0" style="-fx-background-color: ff7b1d;" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="67.0" prefWidth="1280.0" styleClass="header-background-color" BorderPane.alignment="CENTER">
             <children>
-                <Label fx:id="roundedLabel" layoutX="1061.0" layoutY="15.0" opacity="0.4" prefHeight="43.0" prefWidth="197.0" style="-fx-background-color: white;" textFill="WHITE" AnchorPane.rightAnchor="22.0">
+                <Label fx:id="roundedLabel" layoutX="1071.0" layoutY="20.0" opacity="0.4" prefHeight="37.0" prefWidth="176.0" style="-fx-background-color: white;" textFill="WHITE" AnchorPane.rightAnchor="33.0">
                     <font>
                         <Font size="23.0" />
                     </font>
@@ -37,12 +37,12 @@
                         <Font size="23.0" />
                     </font>
                 </Label>
-                <ImageView fx:id="userImageView" fitHeight="29.0" fitWidth="29.0" layoutX="1074.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="177.0">
+                <ImageView fx:id="userImageView" fitHeight="26.0" fitWidth="28.0" layoutX="1079.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="175.0">
                     <image>
                         <Image url="@../images/icon-user.png" />
                     </image>
                 </ImageView>
-                <MenuButton fx:id="usernameMenuButton" contentDisplay="RIGHT" layoutX="1105.0" layoutY="25.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="139.0" text="Wilson A. Limbago Jr." textFill="WHITE" underline="true" AnchorPane.rightAnchor="36.0">
+                <MenuButton fx:id="usernameMenuButton" contentDisplay="RIGHT" layoutX="1103.0" layoutY="26.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="140.0" text="Wilson A. Limbago Jr." textFill="WHITE" AnchorPane.rightAnchor="37.0">
                     <font>
                         <Font size="10.0" />
                     </font>
@@ -89,7 +89,7 @@
                 </HBox>
                 <AnchorPane fx:id="contentAnchorPane" minWidth="1015.0" prefHeight="496.0" prefWidth="1015.0" VBox.vgrow="ALWAYS">
                     <children>
-                        <ScrollPane fx:id="contentScrollPane" hbarPolicy="NEVER" prefHeight="495.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <ScrollPane fx:id="contentScrollPane" focusTraversable="false" hbarPolicy="NEVER" prefHeight="495.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                     </children>
                 </AnchorPane>
             </children>

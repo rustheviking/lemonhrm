@@ -1,14 +1,14 @@
-.font-awesome {
-    -fx-font-family: "Font Awesome 6 free Solid";
-    -fx-font-size: 14;
-    -fx-font-fill: #0077cc;
+.header-background-color {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
 }
 
 .borderless-menu-button .context-menu .menu-item:focused {
     -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when focused
+    -fx-background-radius: 5;
 }
 .borderless-menu-button .context-menu .menu-item:hover {
     -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when hover over it
+    -fx-background-radius: 5;
 }
 
 .borderless-menu-button .context-menu .menu-item {
@@ -34,6 +34,7 @@
 .borderless-menu-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
+
 }
 
 .rounded-label-small {
@@ -45,8 +46,8 @@
 
 .rounded-label {
     -fx-background-color:  #ff7b1d;
-    -fx-padding: 5 10 5 10;
-    -fx-border-radius: 10;
+    -fx-padding: 5 5 5 5;
+    -fx-border-radius: 5;
     -fx-background-radius: 20;
 }
 
@@ -76,6 +77,7 @@
 
 .custom-button:hover {
     -fx-background-color:  #ff7b1d;
+
 }
 
 #customButton{
@@ -83,7 +85,23 @@
 }
 
 #customButton:hover {
-    -fx-background-color:  #ff7b1d;
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
+            -fx-background-radius: 0 20 20 0;
+}
+.button-setFocusOnClicked:active {
+    -fx-text-fill: red;
+    -fx-background-color:
+            linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
+            -fx-background-radius: 0 20 20 0;
+}
+
+#custom-button-focused {
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
+            -fx-background-radius: 0 20 20 0;
 }
 
 .underline-text-field {
