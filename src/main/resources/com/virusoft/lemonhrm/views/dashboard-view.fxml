@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +10,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.DashboardController">
@@ -32,7 +30,7 @@
                         </ImageView>
                     </children>
                 </Pane>
-                <Label fx:id="clickableLabel1" layoutX="302.0" layoutY="23.0" prefHeight="29.0" prefWidth="177.0" text="Dashboard" textFill="WHITE">
+                <Label fx:id="navbarButtonLabel" layoutX="302.0" layoutY="23.0" prefHeight="29.0" prefWidth="177.0" text="Dashboard" textFill="WHITE">
                     <font>
                         <Font size="23.0" />
                     </font>
@@ -55,13 +53,6 @@
             <children>
                 <fx:include fx:id="adminUserNavbar" source="admin-user-navbar-view.fxml" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
             </children>
-            <effect>
-                <DropShadow height="0.0" radius="63.25" spread="0.4" width="255.0">
-                    <color>
-                        <Color red="0.75" green="0.7350000143051147" blue="0.7350000143051147" opacity="0.22681991755962372" />
-                    </color>
-                </DropShadow>
-            </effect>
 
         </AnchorPane>
     </left>
@@ -80,18 +71,22 @@
         </AnchorPane>
     </bottom>
     <center>
-        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+        <VBox minWidth="1015.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
             <children>
-                <HBox minWidth="1015.0" prefHeight="50.0" prefWidth="1015.0">
+                <HBox fx:id="menuHBox" minWidth="1015.0" style="-fx-background-color: white;">
                     <children>
-                        <AnchorPane fx:id="menuAnchorPane" prefHeight="50.0" prefWidth="1061.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS" />
+                        <AnchorPane fx:id="menuAnchorPane" minWidth="1015.0" prefHeight="50.0" prefWidth="1015.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS" />
                     </children>
                 </HBox>
-                <AnchorPane fx:id="contentAnchorPane" minWidth="1015.0" prefHeight="496.0" prefWidth="1015.0" VBox.vgrow="ALWAYS">
-                    <children>
-                        <ScrollPane fx:id="contentScrollPane" focusTraversable="false" hbarPolicy="NEVER" prefHeight="495.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                    </children>
-                </AnchorPane>
+            <HBox minWidth="1015.0" VBox.vgrow="ALWAYS">
+               <children>
+                      <AnchorPane fx:id="contentAnchorPane" minWidth="1015.0" prefHeight="496.0" prefWidth="1015.0" HBox.hgrow="ALWAYS">
+                          <children>
+                              <ScrollPane fx:id="contentScrollPane" focusTraversable="false" hbarPolicy="NEVER" prefHeight="495.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                          </children>
+                      </AnchorPane>
+               </children>
+            </HBox>
             </children>
         </VBox>
     </center>

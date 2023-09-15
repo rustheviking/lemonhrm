@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane prefHeight="50.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.virusoft.lemonhrm.viewcontrollers.DashboardMenuController">
+
+
+<AnchorPane minWidth="1015.0" prefHeight="50.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontrollers.DashboardMenuController">
     <children>
-        <ImageView fx:id="userImageView1" fitHeight="16.0" fitWidth="51.0" layoutX="1036.0" layoutY="18.0"
-                   pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.956521987915039">
+        <ImageView fx:id="userImageView1" fitHeight="16.0" fitWidth="51.0" layoutX="1036.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="7.956521987915039">
             <image>
-                <Image url="@../images/icon-qm.png"/>
+                <Image url="@../images/icon-qm.png" />
             </image>
         </ImageView>
     </children>

@@ -11,7 +11,6 @@ import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,8 +65,7 @@ public class AdminUserNavbarController {
     public ImageView sampleImageView;
     @FXML
     public TextField searchTextField;
-    @FXML
-    public StackPane contentMenuStackPane;
+
     private DashboardUpdateListener dashboardUpdateListener;
 
     @FXML
@@ -77,7 +75,9 @@ public class AdminUserNavbarController {
         adminUserNavbar.setFocusTraversable(false);
 
         //making search text field borderless
-        searchTextField.getStyleClass().add("underline2-text-field");
+        searchTextField.getStyleClass().add("search-text-field");
+
+//------------------------------------ Navbar Configuration Begins --------------------------------------------
 
         // set up a default button to be focused
         dashboardButton.requestFocus();
@@ -85,32 +85,24 @@ public class AdminUserNavbarController {
         dashboardImage.setEffect(new ColorAdjust(0, 0, 1, 0));
 
 
-
-        // Set up mouse hovered event handler
-        //dashboardButton.setId("customButton");
-        // Set up event handler
+        // Set up event handler to call dashboardContent fxml
         dashboardButton.setOnAction(this::handleDashboardButtonAction);
+        // Set up event handler to configure button and imageButton
         dashboardButton.setOnMouseClicked(e -> {
             dashboardButton.requestFocus();
-            setOtherButtonFocusOff(dashboardButton);
-            setButtonFocusOnClicked();
-            System.out.println("Checking if this is being called");
+            setButtonFocus(dashboardButton);
         });
-
-
 
 
         // Set up mouse hovered event handler
         adminButton.setId("customButton");
-        // Set up event handler
+        // Set up event handler to call userContent fxml
         adminButton.setOnAction(this::handleAdminButtonAction);
+        // Set up event handler to configure button and imageButton
         adminButton.setOnMouseClicked(e -> {
             adminButton.requestFocus();
-            setOtherButtonFocusOff(adminButton);
-            setButtonFocusOnClicked();
-            System.out.println("Checking if this is being called");
+            setButtonFocus(adminButton);
         });
-
 
 
         // Set up mouse hovered event handler
@@ -119,11 +111,8 @@ public class AdminUserNavbarController {
         pimButton.setOnAction(this::handlePimButtonAction);
         pimButton.setOnMouseClicked(e -> {
             pimButton.requestFocus();
-            setOtherButtonFocusOff(pimButton);
-            setButtonFocusOnClicked();
-            System.out.println("Checking if this is being called");
+            setButtonFocus(pimButton);
         });
-
 
 
         // Set up mouse hovered event handler
@@ -131,16 +120,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         leaveButton.setOnMouseClicked(e -> {
             leaveButton.requestFocus();
-            setOtherButtonFocusOff(leaveButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(leaveButton);
         });
-        leaveButton.setOnMouseEntered(e -> {
-            leaveImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        leaveButton.setOnMouseExited(e -> {
-            leaveImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -148,16 +129,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         timeButton.setOnMouseClicked(e -> {
             timeButton.requestFocus();
-            setOtherButtonFocusOff(timeButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(timeButton);
         });
-        timeButton.setOnMouseEntered(e -> {
-            timeImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        timeButton.setOnMouseExited(e -> {
-            timeImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -165,16 +138,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         recruitmentButton.setOnMouseClicked(e -> {
             recruitmentButton.requestFocus();
-            setOtherButtonFocusOff(recruitmentButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(recruitmentButton);
         });
-        recruitmentButton.setOnMouseEntered(e -> {
-            recruitmentImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        recruitmentButton.setOnMouseExited(e -> {
-            recruitmentImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -182,16 +147,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         myinfoButton.setOnMouseClicked(e -> {
             myinfoButton.requestFocus();
-            setOtherButtonFocusOff(myinfoButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(myinfoButton);
         });
-        myinfoButton.setOnMouseEntered(e -> {
-            myinfoImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        myinfoButton.setOnMouseExited(e -> {
-            myinfoImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -199,16 +156,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         performanceButton.setOnMouseClicked(e -> {
             performanceButton.requestFocus();
-            setOtherButtonFocusOff(performanceButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(performanceButton);
         });
-        performanceButton.setOnMouseEntered(e -> {
-            performanceImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        performanceButton.setOnMouseExited(e -> {
-            performanceImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -216,16 +165,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         directoryButton.setOnMouseClicked(e -> {
             directoryButton.requestFocus();
-            setOtherButtonFocusOff(directoryButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(directoryButton);
         });
-        directoryButton.setOnMouseEntered(e -> {
-            directoryImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        directoryButton.setOnMouseExited(e -> {
-            directoryImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -233,16 +174,8 @@ public class AdminUserNavbarController {
         // Set up event handler
         buzzButton.setOnMouseClicked(e -> {
             buzzButton.requestFocus();
-            setOtherButtonFocusOff(buzzButton);
-            setButtonFocusOnClicked();
+            setButtonFocus(buzzButton);
         });
-        buzzButton.setOnMouseEntered(e -> {
-            buzzImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-        });
-        buzzButton.setOnMouseExited(e -> {
-            buzzImage.setEffect(null);
-        });
-
 
 
         // Set up mouse hovered event handler
@@ -260,8 +193,8 @@ public class AdminUserNavbarController {
 
     }
 
-    //set up button settings if not focused
-    public void setOtherButtonFocusOff(Button buttonOnFocused){
+    //set up button settings if focused and not focused
+    public void setButtonFocus(Button buttonOnFocused) {
         List<Button> buttonList = new ArrayList<>();
         buttonList.add(dashboardButton);
         buttonList.add(adminButton);
@@ -275,89 +208,68 @@ public class AdminUserNavbarController {
         buttonList.add(buzzButton);
 
         for (Button button : buttonList) {
-            if (button == buttonOnFocused){
+            if (button == buttonOnFocused) {
+                if (button.equals(dashboardButton)) {
+                    button.setId("custom-button-focused");
+                    dashboardImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(adminButton)) {
+                    button.setId("custom-button-focused");
+                    adminImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(pimButton)) {
+                    button.setId("custom-button-focused");
+                    pimImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(leaveButton)) {
+                    button.setId("custom-button-focused");
+                    leaveImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(timeButton)) {
+                    button.setId("custom-button-focused");
+                    timeImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(recruitmentButton)) {
+                    button.setId("custom-button-focused");
+                    recruitmentImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(myinfoButton)) {
+                    button.setId("custom-button-focused");
+                    myinfoImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(performanceButton)) {
+                    button.setId("custom-button-focused");
+                    performanceImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(directoryButton)) {
+                    button.setId("custom-button-focused");
+                    directoryImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                } else if (button.equals(buzzButton)) {
+                    button.setId("custom-button-focused");
+                    buzzImage.setEffect(new ColorAdjust(0, 0, 1, 0));
+                }
                 continue;
             }
             button.setFocusTraversable(false);
             button.setId("customButton");
+            if (button.equals(dashboardButton)) {
+                dashboardImage.setEffect(null);
+            } else if (button.equals(adminButton)) {
+                adminImage.setEffect(null);
+            } else if (button.equals(pimButton)) {
+                pimImage.setEffect(null);
+            } else if (button.equals(leaveButton)) {
+                leaveImage.setEffect(null);
+            } else if (button.equals(timeButton)) {
+                timeImage.setEffect(null);
+            } else if (button.equals(recruitmentButton)) {
+                recruitmentImage.setEffect(null);
+            } else if (button.equals(myinfoButton)) {
+                myinfoImage.setEffect(null);
+            } else if (button.equals(performanceButton)) {
+                performanceImage.setEffect(null);
+            } else if (button.equals(directoryButton)) {
+                directoryImage.setEffect(null);
+            } else if (button.equals(buzzButton)) {
+                buzzImage.setEffect(null);
+            }
         }
     }
 
-    //set up button settings if focused
-    public void setButtonFocusOnClicked() {
-        if (dashboardButton.isFocused()) {
-            dashboardButton.setId("custom-button-focused");
-            dashboardButton.focusedProperty().addListener((observable, oldValue, newValue) -> {
-                if (newValue){
-                    dashboardImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-                } else {
-                    dashboardImage.setEffect(null);
-                }
-            });
-            dashboardButton.setOnMouseEntered(e -> {
-                dashboardImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-            });
-            dashboardButton.setOnMouseExited(e -> {
-                if(dashboardButton.isFocused()){
-                    dashboardImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-                }else {
-                    dashboardImage.setEffect(null);
-                }
-            });
-        } else if (adminButton.isFocused()) {
-            adminButton.setId("custom-button-focused");
-            adminButton.focusedProperty().addListener((observable, oldValue, newValue) -> {
-                if (newValue){
-                    adminImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-                } else {
-                    adminImage.setEffect(null);
-                }
-            });
-            adminButton.setOnMouseEntered(e -> {
-                adminImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-            });
-            adminButton.setOnMouseExited(e -> {
-                if(adminButton.isFocused()){
-                    adminImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-                }else {
-                    adminImage.setEffect(null);
-                }
-            });
-        } else if (pimButton.isFocused()) {
-            pimButton.setId("custom-button-focused");
-            pimButton.focusedProperty().addListener((observable, oldValue, newValue) -> {
-                if (newValue){
-                    pimImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-                } else {
-                    pimImage.setEffect(null);
-                }
-            });
-            pimButton.setOnMouseEntered(e -> {
-                pimImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-            });
-            pimButton.setOnMouseExited(e -> {
-                if(pimButton.isFocused()){
-                    pimImage.setEffect(new ColorAdjust(0, 0, 1, 0));
-                }else {
-                    pimImage.setEffect(null);
-                }
-            });
-        } else if (leaveButton.isFocused()) {
-            leaveButton.setId("custom-button-focused");
-        } else if (timeButton.isFocused()) {
-            timeButton.setId("custom-button-focused");
-        } else if (recruitmentButton.isFocused()) {
-            recruitmentButton.setId("custom-button-focused");
-        } else if (myinfoButton.isFocused()) {
-            myinfoButton.setId("custom-button-focused");
-        } else if (performanceButton.isFocused()) {
-            performanceButton.setId("custom-button-focused");
-        } else if (directoryButton.isFocused()) {
-            directoryButton.setId("custom-button-focused");
-        } else if (buzzButton.isFocused()) {
-            buzzButton.setId("custom-button-focused");
-        }
-    }
+//------------------------------------ Navbar Configuration Ends --------------------------------------------
+
 
     public void setDashboardUpdateListener(DashboardUpdateListener Listener) {
         this.dashboardUpdateListener = Listener;

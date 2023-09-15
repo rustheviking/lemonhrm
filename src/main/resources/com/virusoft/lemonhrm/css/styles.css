@@ -1,7 +1,11 @@
+
+//------------------------------------- Header BG-Color Radiant Orange CSS -----------------------------------------
 .header-background-color {
     -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
 }
 
+
+//------------------------------------- Borderless Menu-Buttons CSS ------------------------------------------------
 .borderless-menu-button .context-menu .menu-item:focused {
     -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when focused
     -fx-background-radius: 5;
@@ -37,15 +41,17 @@
 
 }
 
+
+//------------------------------------- Rounded Label CSS ------------------------------------------------
 .rounded-label-small {
-    -fx-background-color:  #ff7b1d;
+    -fx-background-color:  #fc8d42;
     -fx-padding: 2 5 2 5;
     -fx-border-radius: 5;
     -fx-background-radius: 20;
 }
 
 .rounded-label {
-    -fx-background-color:  #ff7b1d;
+    -fx-background-color:  #fc8d42;
     -fx-padding: 5 5 5 5;
     -fx-border-radius: 5;
     -fx-background-radius: 20;
@@ -56,11 +62,11 @@
 }
 
 .hoverable-label-change-bgcolor: hover {
-    -fx-background-color:  #ff7b1d;
+    -fx-background-color:  #fc8d42;
 }
 
 .change-bgcolor-upon-clicked-label: clicked {
-    -fx-background-color:  #ff7b1d;
+    -fx-background-color:  #fc8d42;
 }
 
 #customLabel{
@@ -68,7 +74,7 @@
 }
 
 #customLabel:hover {
-    -fx-background-color:  #ff7b1d;
+    -fx-background-color:  #fc8d42;
 }
 
 .custom-button{
@@ -76,46 +82,61 @@
 }
 
 .custom-button:hover {
-    -fx-background-color:  #ff7b1d;
+    -fx-background-color:  #fc8d42;
 
 }
 
+//----------------------------------------- NAVBAR CSS -----------------------------------------
+
+//this is for navbar not focused
 #customButton{
     -fx-background-color:  #ffffff;
 }
 
-#customButton:hover {
-    -fx-text-fill: white;
-    -fx-background-color:
-            linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
-            -fx-background-radius: 0 20 20 0;
-}
-.button-setFocusOnClicked:active {
-    -fx-text-fill: red;
-    -fx-background-color:
-            linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
-            -fx-background-radius: 0 20 20 0;
-}
 
+//this is for navbar focused
 #custom-button-focused {
     -fx-text-fill: white;
     -fx-background-color:
-            linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
-            -fx-background-radius: 0 20 20 0;
+            linear-gradient(from 0% 0% to 100% 0%, #fc8d42, #eb5904);
+    -fx-background-radius: 0 20 20 0;
 }
 
-.underline-text-field {
-    -fx-background-color: -fx-box-border, -fx-control-inner-background, -fx-faint-focus-color, transparent;
-    -fx-background-insets: 0, 1, 2, 3;
-    -fx-background-radius: 0;
-    -fx-padding: 0.333333em 0.166667em 0.333333em 0.166667em;
-    -fx-text-fill: -fx-text-inner-color;
+//this is for navbar hover
+#customButton:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 0% to 100% 0%, #fc8d4279, #eb590479);
+    -fx-background-radius: 0 20 20 0;
 }
 
-.underline2-text-field {
-    -fx-background-color: -fx-control-inner-background, -fx-faint-focus-color, -fx-control-inner-background, -fx-faint-focus-color, -fx-control-inner-background;
-    -fx-background-insets: 0, 1, 1.4, 2.1, 2.6;
+
+
+//-------------------------------------- SEARCH TEXTFIELD CSS -------------------------------------
+.search-text-field {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
     -fx-background-radius: 0;
-    -fx-padding: 0.333333em 0.166667em 0.333333em 0.166667em;
-    -fx-text-fill: -fx-text-inner-color;
+    -fx-padding: 0;
+}
+
+.search-text-field: focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.search-text-field .text {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0;
+}
+
+
+//-------------------------------------- content-scrollpane CSS -------------------------------------
+.content-scrollpane: focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-box-border: transparent;
 }

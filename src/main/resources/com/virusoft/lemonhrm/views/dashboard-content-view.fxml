@@ -20,9 +20,9 @@
    <children>
       <VBox layoutX="51.0" layoutY="37.0" prefHeight="919.0" prefWidth="913.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="37.0">
          <children>
-            <HBox prefHeight="404.0" prefWidth="874.0" VBox.vgrow="ALWAYS">
+            <HBox prefHeight="404.0" prefWidth="913.0" VBox.vgrow="ALWAYS">
                <children>
-                  <AnchorPane prefHeight="356.0" prefWidth="874.0" HBox.hgrow="ALWAYS">
+                  <AnchorPane prefHeight="415.0" prefWidth="913.0" HBox.hgrow="ALWAYS">
                      <children>
                         <GridPane alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="404.0" prefWidth="913.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <columnConstraints>
@@ -337,7 +337,7 @@
                   </AnchorPane>
                </children>
             </HBox>
-            <Pane prefHeight="50.0" prefWidth="871.0" VBox.vgrow="ALWAYS" />
+            <Pane prefHeight="0.0" prefWidth="913.0" VBox.vgrow="ALWAYS" />
             <HBox layoutX="10.0" layoutY="10.0" prefHeight="404.0" prefWidth="874.0">
                <children>
                   <AnchorPane prefHeight="356.0" prefWidth="874.0" HBox.hgrow="ALWAYS">
@@ -373,7 +373,7 @@
                                     </ImageView>
                                     <VBox alignment="CENTER" layoutX="21.0" layoutY="91.0" prefHeight="247.0" prefWidth="240.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="23.0">
                                        <children>
-                                          <ImageView fitHeight="255.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="223.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../images/icon-empty-dashboard.png" />
                                              </image>
@@ -408,7 +408,7 @@
                                     </ImageView>
                                     <VBox alignment="CENTER" layoutX="18.0" layoutY="91.0" prefHeight="247.0" prefWidth="251.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="15.0">
                                        <children>
-                                          <ImageView fitHeight="255.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                                          <ImageView fitHeight="223.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
                                                 <Image url="@../images/icon-empty-dashboard.png" />
                                              </image>
