@@ -107,8 +107,9 @@ public class AdminUserNavbarController {
 
         // Set up mouse hovered event handler
         pimButton.setId("customButton");
-        // Set up event handler
+        // Set up event handler to call pim Content fxml
         pimButton.setOnAction(this::handlePimButtonAction);
+        // Set up event handler to configure button and imageButton
         pimButton.setOnMouseClicked(e -> {
             pimButton.requestFocus();
             setButtonFocus(pimButton);

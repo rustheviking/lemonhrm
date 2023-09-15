@@ -12,6 +12,7 @@ public class UsersContentController {
 
     @FXML
     public HBox usersContentHBox;
+    private DashboardUpdateListener dashboardUpdateListener;
 
     @FXML
     public void initialize() {
@@ -20,8 +21,6 @@ public class UsersContentController {
         usersContentAnchorPane.setFocusTraversable(false);
         usersContentHBox.setFocusTraversable(false);
     }
-
-    private DashboardUpdateListener dashboardUpdateListener;
 
     public void setDashboardUpdateListener(DashboardUpdateListener Listener) {
         this.dashboardUpdateListener = Listener;

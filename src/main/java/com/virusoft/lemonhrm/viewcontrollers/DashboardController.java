@@ -205,6 +205,16 @@ public class DashboardController implements DashboardUpdateListener {
             pimMenuController.setDashboardUpdateListener(this);
             pimMenu.prefWidthProperty().bind(menuHBox.widthProperty());
             menuHBox.getChildren().setAll(pimMenu);
+
+            //Set up pim content as Employee content
+            String contentFXMLPath = "/com/virusoft/lemonhrm/views/pim-content-view.fxml";
+            FXMLLoader contentLoader = new FXMLLoader(getClass().getResource(contentFXMLPath));
+            HBox pimContent = contentLoader.load();
+            PimContentController pimContentController = contentLoader.getController();
+            pimContentController.setDashboardUpdateListener(this);
+            pimContent.prefWidthProperty().bind(contentScrollPane.widthProperty());
+            contentScrollPane.setContent(pimContent);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
