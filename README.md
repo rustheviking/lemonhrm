@@ -41,7 +41,7 @@ Before running the LemonHRM Desktop Application, make sure you have the followin
 3. Build the application using Maven:
 
    ```bash
-   mvn clean package
+   mvn install
    ```
 
 4. Run the application:
