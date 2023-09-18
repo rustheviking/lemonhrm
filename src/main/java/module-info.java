@@ -3,13 +3,15 @@ module com.virusoft.lemonhrm {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
+    requires java.persistence;
 
-    opens com.virusoft.lemonhrm to javafx.fxml;
-    opens com.virusoft.lemonhrm.viewcontrollers to javafx.fxml;
-    opens com.virusoft.lemonhrm.controllers to javafx.fxml;
-    exports com.virusoft.lemonhrm;
-    exports com.virusoft.lemonhrm.interfaces;
-    exports com.virusoft.lemonhrm.viewcontrollers;
+    opens com.virusoft to javafx.fxml;
+    opens com.virusoft.viewcontrollers to javafx.fxml;
+    opens com.virusoft.controllers to javafx.fxml;
+    exports com.virusoft.interfaces;
+    exports com.virusoft.viewcontrollers;
+    exports com.virusoft;
+
 
 
 }

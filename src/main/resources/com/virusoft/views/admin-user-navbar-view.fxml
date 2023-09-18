@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="adminUserNavbar" prefHeight="527.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.viewcontrollers.AdminUserNavbarController">
+    <children>
+        <TextField fx:id="searchTextField" focusTraversable="false" layoutX="58.0" layoutY="13.0" prefHeight="28.0" prefWidth="156.0" promptText="Search...">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+        <Button fx:id="dashboardButton" contentDisplay="TEXT_ONLY" focusTraversable="false" layoutX="-1.0" layoutY="56.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="250.0" text="Dashboard  " textFill="#433d61f2">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="adminButton" focusTraversable="false" layoutX="-1.0" layoutY="98.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Admin         " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="pimButton" focusTraversable="false" layoutX="-1.0" layoutY="140.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="PIM              " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="leaveButton" focusTraversable="false" layoutX="-1.0" layoutY="182.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Leave          " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="timeButton" focusTraversable="false" layoutX="-1.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Time            " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="recruitmentButton" focusTraversable="false" layoutX="-1.0" layoutY="266.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Recruitment" textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="myinfoButton" focusTraversable="false" layoutX="-1.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="My Info        " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="performanceButton" focusTraversable="false" layoutX="-1.0" layoutY="350.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Performance" textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="directoryButton" focusTraversable="false" layoutX="-1.0" layoutY="392.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Directory      " textFill="#433d61">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Button fx:id="buzzButton" focusTraversable="false" layoutX="-1.0" layoutY="434.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Buzz             " textFill="#433d61f2">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Label fx:id="clickableLabel" alignment="CENTER" focusTraversable="false" layoutX="1.0" layoutY="477.0" prefHeight="26.0" prefWidth="250.0" text="Clickable Label" />
+        <ImageView fx:id="dashboardImage" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-dashboard.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="sampleImageView" fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-buzz.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="23.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-search.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="adminImage" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-admin.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="pimImage" fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-pim.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="leaveImage" fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-leave.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="timeImage" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-time.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="recruitmentImage" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-recruitment.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="myinfoImage" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-myinfo.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="performanceImage" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-performance.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="directoryImage" fitHeight="30.0" fitWidth="30.0" layoutX="37.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-directory.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="buzzImage" fitHeight="30.0" fitWidth="30.0" layoutX="36.0" layoutY="442.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/icon-buzz.png" />
+            </image>
+        </ImageView>
+      <Separator layoutX="51.0" layoutY="42.0" opacity="0.8" prefHeight="3.0" prefWidth="166.0" />
+
+
+    </children>
+</Pane>

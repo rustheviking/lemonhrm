@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.viewcontrollers.DashboardController">
+    <top>
+        <AnchorPane prefHeight="67.0" prefWidth="1280.0" styleClass="header-background-color" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="roundedLabel" layoutX="1071.0" layoutY="20.0" opacity="0.4" prefHeight="37.0" prefWidth="176.0" style="-fx-background-color: white;" textFill="WHITE" AnchorPane.rightAnchor="33.0">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <Pane layoutY="-1.0" prefHeight="75.0" prefWidth="249.0" style="-fx-background-color: white;">
+                    <children>
+                        <ImageView fitHeight="55.0" fitWidth="230.0" layoutX="39.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icon-banner.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Label fx:id="navbarButtonLabel" layoutX="302.0" layoutY="23.0" prefHeight="29.0" prefWidth="177.0" text="Dashboard" textFill="WHITE">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="userImageView" fitHeight="26.0" fitWidth="28.0" layoutX="1079.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="175.0">
+                    <image>
+                        <Image url="@../images/icon-user.png" />
+                    </image>
+                </ImageView>
+                <MenuButton fx:id="usernameMenuButton" contentDisplay="RIGHT" layoutX="1103.0" layoutY="26.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="140.0" text="Wilson A. Limbago Jr." textFill="WHITE" AnchorPane.rightAnchor="37.0">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </MenuButton>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane fx:id="navbarAnchorPane" prefHeight="643.0" prefWidth="250.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <fx:include fx:id="adminUserNavbar" source="admin-user-navbar-view.fxml" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="182.0" prefWidth="15.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+    </right>
+    <bottom>
+        <AnchorPane prefHeight="24.0" prefWidth="1280.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="37.0" fitWidth="146.0" layoutX="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0">
+                    <image>
+                        <Image url="@../images/icon-banner.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </bottom>
+    <center>
+        <VBox minWidth="1015.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="menuHBox" minWidth="1015.0" style="-fx-background-color: white;">
+                    <children>
+                        <AnchorPane fx:id="menuAnchorPane" minWidth="1015.0" prefHeight="50.0" prefWidth="1015.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            <HBox minWidth="1015.0" VBox.vgrow="ALWAYS">
+               <children>
+                      <AnchorPane fx:id="contentAnchorPane" minWidth="1015.0" prefHeight="496.0" prefWidth="1015.0" HBox.hgrow="ALWAYS">
+                          <children>
+                              <ScrollPane fx:id="contentScrollPane" focusTraversable="false" hbarPolicy="NEVER" prefHeight="495.0" prefWidth="1015.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                          </children>
+                      </AnchorPane>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
