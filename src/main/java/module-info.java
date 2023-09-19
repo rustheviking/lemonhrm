@@ -4,6 +4,7 @@ module com.virusoft.lemonhrm {
 
     requires org.kordamp.bootstrapfx.core;
     requires java.persistence;
+    requires spring.data.jpa;
 
     opens com.virusoft to javafx.fxml;
     opens com.virusoft.viewcontrollers to javafx.fxml;
