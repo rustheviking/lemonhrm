@@ -1,6 +1,6 @@
 package com.virusoft.repositories;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public abstract class UserRepositoryImpl implements UserRepository {
 

@@ -1,4 +1,7 @@
 package com.virusoft.repositories;
 
-public class RoleRepository {
+import com.virusoft.models.Role;
+import org.springframework.data.repository.CrudRepository;
+
+public interface RoleRepository extends CrudRepository<Role, Integer> {
 }

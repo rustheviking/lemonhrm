@@ -5,13 +5,25 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import java.io.IOException;
 import java.util.Objects;
 
+@SpringBootApplication
 public class Main extends Application {
+
+    private ConfigurableApplicationContext context;
+
     public static void main(String[] args) {
         launch();
+    }
+
+    @Override
+    public void init() {
+        context = SpringApplication.run(Main.class);
     }
 
     @Override
@@ -24,4 +36,11 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.show();
     }
+
+    @Override
+    public void stop() {
+        context.close();
+        ;
+    }
+
 }

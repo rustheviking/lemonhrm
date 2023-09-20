@@ -1,6 +1,6 @@
 package com.virusoft.models;
 
-import javax.persistence.Column;
+import jakarta.persistence.Column;
 
 public class Role {
 

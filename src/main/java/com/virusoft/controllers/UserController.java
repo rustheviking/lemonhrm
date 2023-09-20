@@ -1,20 +1,20 @@
 package com.virusoft.controllers;
 
 import com.virusoft.models.User;
-import com.virusoft.services.UserService;
+import com.virusoft.services.UserServiceImpl;
 
 public class UserController {
 
-    private UserService userService;
+    private final UserServiceImpl userService;
 
-    public UserController(UserService userService) {
+    public UserController(UserServiceImpl userService) {
         this.userService = userService;
     }
 
 
     public void createUser(User user){
 
-        User createUser = userService.createUser(user);
+        //User createUser = userService.createUser(user);
 
         // Handling the response, such as displaying the user or updating UI
 
@@ -22,7 +22,15 @@ public class UserController {
 
     public void getUserById(Integer id){
 
-        User getUserById = userService.getUserById(id);
+        //User getUserById = userService.getUserById(id);
+
+        // Handling the response, such as displaying the user or updating UI
+
+    }
+
+    public void findByUsername(String username){
+
+        User findByUsername = userService.findByUsername(username);
 
         // Handling the response, such as displaying the user or updating UI
 
