@@ -1,11 +1,11 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 
-public class UsersContentController {
+public class UsersContentView {
 
     @FXML
     public AnchorPane usersContentAnchorPane;

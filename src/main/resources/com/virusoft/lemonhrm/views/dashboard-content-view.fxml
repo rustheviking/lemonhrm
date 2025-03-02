@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="720.0" prefHeight="1025.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontroller.DashboardContentController">
+<AnchorPane minHeight="720.0" prefHeight="1025.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.view.DashboardContentView">
    <children>
       <VBox layoutX="51.0" layoutY="37.0" prefHeight="919.0" prefWidth="913.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="37.0">
          <children>

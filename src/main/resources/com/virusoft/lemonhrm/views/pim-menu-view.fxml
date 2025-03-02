@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0"
             prefWidth="1061.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.virusoft.lemonhrm.viewcontroller.PimMenuController">
+            fx:controller="com.virusoft.lemonhrm.view.PimMenuView">
     <children>
         <Label fx:id="menu1RoundedLabel" layoutX="51.0" layoutY="8.0" opacity="0.4" prefHeight="20.0" prefWidth="125.0"
                style="-fx-background-color: ff7b1d;" textFill="WHITE" AnchorPane.bottomAnchor="7.0"

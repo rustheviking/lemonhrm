@@ -1,8 +1,8 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 
-public class AdminContentController {
+public class AdminContentView {
 
     private DashboardUpdateListener dashboardUpdateListener;
 

@@ -9,7 +9,7 @@
 <BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
             minWidth="-Infinity" prefHeight="640.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.virusoft.lemonhrm.viewcontroller.DashboardController">
+            fx:controller="com.virusoft.lemonhrm.view.DashboardView">
     <top>
         <AnchorPane prefHeight="67.0" prefWidth="1280.0" styleClass="header-background-color"
                     BorderPane.alignment="CENTER">

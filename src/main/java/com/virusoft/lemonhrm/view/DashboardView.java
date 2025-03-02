@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.fxml.FXML;
@@ -16,7 +16,7 @@ import javafx.scene.shape.Circle;
 
 import java.io.IOException;
 
-public class DashboardController implements DashboardUpdateListener {
+public class DashboardView implements DashboardUpdateListener {
 
     @FXML
     public AnchorPane navbarAnchorPane;
@@ -102,16 +102,16 @@ public class DashboardController implements DashboardUpdateListener {
             FXMLPath = "/com/virusoft/lemonhrm/view/admin-user-navbar-view.fxml";
             FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
             Parent navbar = loader.load();
-            AdminUserNavbarController adminUserNavbarController = loader.getController();
-            adminUserNavbarController.setDashboardUpdateListener(this);
+            AdminUserNavbarView adminUserNavbarView = loader.getController();
+            adminUserNavbarView.setDashboardUpdateListener(this);
             navbarAnchorPane.getChildren().setAll(navbar);
 
         } else {
             FXMLPath = "/com/virusoft/lemonhrm/view/pim-user-navbar-view.fxml";
             FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
             Parent navbar = loader.load();
-            PimUserNavbarController pimUserNavbarController = loader.getController();
-            pimUserNavbarController.setDashboardUpdateListener(this);
+            PimUserNavbarView pimUserNavbarView = loader.getController();
+            pimUserNavbarView.setDashboardUpdateListener(this);
             navbarAnchorPane.getChildren().setAll(navbar);
         }
     }
@@ -132,8 +132,8 @@ public class DashboardController implements DashboardUpdateListener {
         String FXMLPath = "/com/virusoft/lemonhrm/view/dashboard-content-view.fxml";
         FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
         AnchorPane content = loader.load();
-        DashboardContentController dashboardContentController  = loader.getController();
-        dashboardContentController.setDashboardUpdateListener(this);
+        DashboardContentView dashboardContentView = loader.getController();
+        dashboardContentView.setDashboardUpdateListener(this);
         content.prefWidthProperty().bind(contentScrollPane.widthProperty());
         //content.prefHeightProperty().bind(contentScrollPane.heightProperty());
         contentScrollPane.setContent(content);
@@ -172,8 +172,8 @@ public class DashboardController implements DashboardUpdateListener {
             String menuFXMLPath = "/com/virusoft/lemonhrm/view/admin-menu-view.fxml";
             FXMLLoader menuLoader = new FXMLLoader(getClass().getResource(menuFXMLPath));
             AnchorPane adminMenu = menuLoader.load();
-            AdminMenuController adminMenuController = menuLoader.getController();
-            adminMenuController.setDashboardUpdateListener(this);
+            AdminMenuView adminMenuView = menuLoader.getController();
+            adminMenuView.setDashboardUpdateListener(this);
             adminMenu.prefWidthProperty().bind(menuHBox.widthProperty());
             menuHBox.getChildren().setAll(adminMenu);
 
@@ -181,8 +181,8 @@ public class DashboardController implements DashboardUpdateListener {
             String contentFXMLPath = "/com/virusoft/lemonhrm/view/users-content-view.fxml";
             FXMLLoader contentLoader = new FXMLLoader(getClass().getResource(contentFXMLPath));
             HBox usersContent = contentLoader.load();
-            UsersContentController usersContentController = contentLoader.getController();
-            usersContentController.setDashboardUpdateListener(this);
+            UsersContentView usersContentView = contentLoader.getController();
+            usersContentView.setDashboardUpdateListener(this);
             usersContent.prefWidthProperty().bind(contentScrollPane.widthProperty());
             contentScrollPane.setContent(usersContent);
 
@@ -201,8 +201,8 @@ public class DashboardController implements DashboardUpdateListener {
             String FXMLPath = "/com/virusoft/lemonhrm/view/pim-menu-view.fxml";
             FXMLLoader loader = new FXMLLoader(getClass().getResource(FXMLPath));
             AnchorPane pimMenu = loader.load();
-            PimMenuController pimMenuController = loader.getController();
-            pimMenuController.setDashboardUpdateListener(this);
+            PimMenuView pimMenuView = loader.getController();
+            pimMenuView.setDashboardUpdateListener(this);
             pimMenu.prefWidthProperty().bind(menuHBox.widthProperty());
             menuHBox.getChildren().setAll(pimMenu);
 
@@ -210,8 +210,8 @@ public class DashboardController implements DashboardUpdateListener {
             String contentFXMLPath = "/com/virusoft/lemonhrm/view/pim-content-view.fxml";
             FXMLLoader contentLoader = new FXMLLoader(getClass().getResource(contentFXMLPath));
             HBox pimContent = contentLoader.load();
-            PimContentController pimContentController = contentLoader.getController();
-            pimContentController.setDashboardUpdateListener(this);
+            PimContentView pimContentView = contentLoader.getController();
+            pimContentView.setDashboardUpdateListener(this);
             pimContent.prefWidthProperty().bind(contentScrollPane.widthProperty());
             contentScrollPane.setContent(pimContent);
 
@@ -270,8 +270,8 @@ public class DashboardController implements DashboardUpdateListener {
             String contentFXMLPath = "/com/virusoft/lemonhrm/view/users-content-view.fxml";
             FXMLLoader contentLoader = new FXMLLoader(getClass().getResource(contentFXMLPath));
             HBox usersContent = contentLoader.load();
-            UsersContentController usersContentController = contentLoader.getController();
-            usersContentController.setDashboardUpdateListener(this);
+            UsersContentView usersContentView = contentLoader.getController();
+            usersContentView.setDashboardUpdateListener(this);
             usersContent.prefWidthProperty().bind(contentScrollPane.widthProperty());
             contentScrollPane.setContent(usersContent);
         } catch (IOException e) {

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="adminUserNavbar" prefHeight="527.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontroller.AdminUserNavbarController">
+<Pane fx:id="adminUserNavbar" prefHeight="527.0" prefWidth="250.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.view.AdminUserNavbarView">
     <children>
         <TextField fx:id="searchTextField" focusTraversable="false" layoutX="58.0" layoutY="13.0" prefHeight="28.0" prefWidth="156.0" promptText="Search...">
          <padding>

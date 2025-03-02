@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="pimContentHBox" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.viewcontroller.PimContentController">
+<HBox fx:id="pimContentHBox" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.virusoft.lemonhrm.view.PimContentView">
     <children>
         <AnchorPane prefHeight="800.0" prefWidth="1015.0" HBox.hgrow="ALWAYS">
             <children>

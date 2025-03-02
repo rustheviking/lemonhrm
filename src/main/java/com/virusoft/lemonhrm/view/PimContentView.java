@@ -1,10 +1,10 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 
-public class PimContentController {
+public class PimContentView {
 
     @FXML
     public ComboBox<String> includeComboBox;

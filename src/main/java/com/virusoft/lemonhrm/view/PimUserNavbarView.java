@@ -1,10 +1,10 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class PimUserNavbarController {
+public class PimUserNavbarView {
 
     private DashboardUpdateListener dashboardUpdateListener;
 

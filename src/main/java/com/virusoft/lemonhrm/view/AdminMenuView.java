@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.event.ActionEvent;
@@ -8,7 +8,7 @@ import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 
 
-public class AdminMenuController {
+public class AdminMenuView {
 
     private DashboardUpdateListener dashboardUpdateListener;
 

@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.event.ActionEvent;
@@ -15,7 +15,7 @@ import javafx.scene.layout.Pane;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminUserNavbarController {
+public class AdminUserNavbarView {
 
     @FXML
     public Pane adminUserNavbar;

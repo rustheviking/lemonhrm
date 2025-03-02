@@ -1,11 +1,11 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import com.virusoft.lemonhrm.interfaces.DashboardUpdateListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 
-public class PimMenuController {
+public class PimMenuView {
 
     @FXML
     public Label menu1RoundedLabel;

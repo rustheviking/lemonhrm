@@ -15,7 +15,7 @@
             prefHeight="500.0" prefWidth="626.0" style="-fx-background-color: white;"
             xmlns="http://javafx.com/javafx/20.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.virusoft.lemonhrm.viewcontroller.LoginController">
+            fx:controller="com.virusoft.lemonhrm.view.LoginView">
     <ImageView fitHeight="486.0" fitWidth="351.0" layoutX="274.0" layoutY="7.0" pickOnBounds="true"
                preserveRatio="true">
         <Image url="@../image/icon-side-banner.png"/>

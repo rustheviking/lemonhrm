@@ -1,11 +1,11 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class ForgotYourPasswordController {
+public class ForgotYourPasswordView {
 
     @FXML
     public Button closeButton;

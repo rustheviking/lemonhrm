@@ -1,4 +1,4 @@
-package com.virusoft.lemonhrm.viewcontroller;
+package com.virusoft.lemonhrm.view;
 
 
 import javafx.event.ActionEvent;
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 
-public class LoginController {
+public class LoginView {
 
     @FXML
     public Label forgetyourpasswordLabel;
@@ -97,7 +97,7 @@ public class LoginController {
                 Parent dashboard = dashboardloader.load();
 
                 //Get the DashboardController and initialize it
-                DashboardController dashboardController = dashboardloader.getController();
+                DashboardView dashboardController = dashboardloader.getController();
 
                 //Set up userRole as admin for testing
                 String userRole = "admin";
